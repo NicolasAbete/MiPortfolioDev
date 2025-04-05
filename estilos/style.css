@@ -1201,7 +1201,7 @@ textarea.contacto-form-control {
     .timeline-item:nth-child(even) {
         float: none;
         clear: both;
-        margin-left: 60px;
+        margin-left: 15px;
         margin-right: 0;
     }
     
