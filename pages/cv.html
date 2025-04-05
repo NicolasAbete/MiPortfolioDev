@@ -1,0 +1,106 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Web Junior | Contacto</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">DevPortfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sobreMi.html">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contáctame</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="cv-container">
+    
+    <img src="../img/cv-solo.PNG" alt="Imagen del CV" class="cv-img" />
+    <a href="../img/cv-solo.PNG" download="" class="btn btn-outline">Descargar</a>
+    
+    </div>
+</body>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <h5>DevPortfolio</h5>
+                <p>Desarrollador web junior enfocado en crear experiencias digitales atractivas y funcionales.</p>
+            </div>
+            <div class="col-md-2 mb-4 mb-md-0 footer-links">
+                <h5>Navegar</h5>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                    <li><a href="cv.html">CV</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 mb-4 mb-md-0 footer-links">
+                <h5>Contacto</h5>
+                <ul>
+                    <li><a href="mailto:tu@email.com"><i class="fas fa-envelope me-2"></i> tu@email.com</a></li>
+                    <li><a href="tel:+1234567890"><i class="fas fa-phone me-2"></i> +123 456 7890</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt me-2"></i> Tu Ciudad, País</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 footer-links">
+                <h5>Social</h5>
+                <ul>
+                    <li><a href="#"><i class="fab fa-github me-2"></i> GitHub</a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in me-2"></i> LinkedIn</a></li>
+                    <li><a href="#"><i class="fab fa-twitter me-2"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-codepen me-2"></i> CodePen</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 DevPortfolio. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script>
+// Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.padding = '10px 0';
+                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+                navbar.style.boxShadow = '0 4px 10px -1px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.padding = '20px 0';
+                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+            }
+        });
+    </script>
+</html>

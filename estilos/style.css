@@ -1223,3 +1223,58 @@ textarea.contacto-form-control {
         margin-top: 40px;
     }
 }
+/* Estilos específicos para la página del CV */
+.cv-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #3ab5ee, #f10bb8);
+    padding: 2rem;
+    text-align: center;
+}
+
+.cv-title {
+    color: #00fff7;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cv-img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #00fff7;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 247, 0.3);
+    margin-bottom: 1.5rem;
+    margin-top: 4.5rem;
+}
+
+.cv-download-btn {
+    background-color: #00fff7;
+    color: #000;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cv-download-btn:hover {
+    background-color: #00bfb3;
+}
+
+@media (max-width: 768px) {
+    .cv-title {
+    font-size: 2rem;
+    }
+
+    .cv-download-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+    }
+}
