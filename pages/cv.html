@@ -1,7 +1,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Web Junior | Contacto</title>
+    <title>Portfolio Web Junior | CV</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -29,10 +29,10 @@
                         <a class="nav-link" href="./sobreMi.html">Sobre Mí</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./cv.html">CV</a>
+                        <a class="nav-link active" href="./cv.html">CV</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./contacto.html">Contáctame</a>
+                        <a class="nav-link" href="./contacto.html">Contáctame</a>
                     </li>
                 </ul>
             </div>
@@ -89,8 +89,9 @@
 <!-- Bootstrap Bundle with Popper -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 <script>
-// Navbar scroll effect
-        window.addEventListener('scroll', function() {
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', function() {
             const navbar = document.querySelector('.navbar');
             if (window.scrollY > 50) {
                 navbar.style.padding = '10px 0';
@@ -102,5 +103,16 @@
                 navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
             }
         });
-    </script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+</script>
 </html>
