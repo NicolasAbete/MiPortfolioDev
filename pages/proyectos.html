@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Web Junior | Proyectos</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="./proyectos.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">DevPortfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../sobre-mi.html">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../cv.html">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contáctame</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section with Background Animation -->
+    <section class="projects-header">
+        <ul class="bg-animation">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>Mis <span class="gradient-text">Proyectos</span></h1>
+                    <p class="lead">Una colección de trabajos que reflejan mi trayectoria y habilidades como desarrollador web</p>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">Todos</button>
+                        <button class="filter-btn" data-filter="web">Desarrollo Web</button>
+                        <button class="filter-btn" data-filter="frontend">Frontend</button>
+                        <button class="filter-btn" data-filter="backend">Backend</button>
+                        <button class="filter-btn" data-filter="design">Diseño</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-showcase">
+        <div class="container">
+            <div class="row">
+                <!-- Proyecto 1 -->
+                <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="frontend design web">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="../img/old-portfolio.png" alt="Mi primer portfolio" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="#" class="preview-btn"><i class="fas fa-eye"></i></a>
+                                <a href="https://github.com/NicolasAbete/Proyecto-Pagina-Web-Portfolio" target="_blank" class="code-btn"><i class="fas fa-code"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Mi Primer Portfolio</h3>
+                                <span class="project-date"><i class="far fa-calendar-alt"></i> Febrero 2024</span>
+                            </div>
+                            <p>Este portfolio fue la primera web que programé solo. El 100% del código lo hice yo intentando que sea una web escalable y modificable en su totalidad.</p>
+                            <div class="project-tech">
+                                <span class="project-tag tag-html">HTML</span>
+                                <span class="project-tag tag-css">CSS</span>
+                                <span class="project-tag tag-js">JavaScript</span>
+                                <span class="project-tag tag-sass">SASS</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/NicolasAbete/Proyecto-Pagina-Web-Portfolio" target="_blank" class="btn btn-sm btn-code">Ver Código</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="frontend backend web">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-icon-container">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="#" class="preview-btn"><i class="fas fa-eye"></i></a>
+                                <a href="https://github.com/CodeSystem2022/Grupo-Omega-4to-semestre" target="_blank" class="code-btn"><i class="fas fa-code"></i></a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>E-commerce</h3>
+                                <span class="project-date"><i class="far fa-calendar-alt"></i> Enero 2022</span>
+                            </div>
+                            <p>Tienda online responsive con carrito de compras funcional. Este proyecto lo realizamos durante el cursado de UTN con mi equipo de trabajo Omega.</p>
+                            <div class="project-tech">
+                                <span class="project-tag tag-html">HTML</span>
+                                <span class="project-tag tag-css">CSS</span>
+                                <span class="project-tag tag-js">JavaScript</span>
+                                <span class="project-tag tag-sql">SQL</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/CodeSystem2022/Grupo-Omega-4to-semestre" target="_blank" class="btn btn-sm btn-code">Ver Código</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Preview -->
+    <section class="contact-preview">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2>¿Interesado en trabajar juntos?</h2>
+                    <p class="mb-4">Estoy disponible para nuevas oportunidades laborales. ¡Contáctame y conversemos!</p>
+                    <a href="./contacto.html" class="btn btn-light btn-lg">Envíame un mensaje</a>
+                    <div class="social-links">
+                        <a href="https://github.com/NicolasAbete" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/nicoabete_/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.link/ya1z1n" target="_blank"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>DevPortfolio</h5>
+                    <p>Desarrollador web junior enfocado en crear experiencias digitales atractivas y funcionales.</p>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0 footer-links">
+                    <h5>Navegar</h5>
+                    <ul>
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./proyectos.html">Proyectos</a></li>
+                        <li><a href="../sobre-mi.html">Sobre Mí</a></li>
+                        <li><a href="../cv.html">CV</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0 footer-links">
+                    <h5>Contacto</h5>
+                    <ul>
+                        <li><a href="mailto:nicolas.abete@hotmail.com"><i class="fas fa-envelope me-2"></i> nicolas.abete@hotmail.com</a></li>
+                        <li><a href="tel:+542604206747"><i class="fas fa-phone me-2"></i> +54 0 260 4206747</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt me-2"></i> San Rafael, Mendoza, Argentina</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-links">
+                    <h5>Social</h5>
+                    <ul>
+                        <li><a href="https://github.com/NicolasAbete" target="_blank"><i class="fab fa-github me-2"></i> GitHub</a></li>
+                        <li><a href="https://www.instagram.com/nicoabete_/" target="_blank"><i class="fab fa-instagram me-2"></i> Instagram</a></li>
+                        <li><a href="https://wa.link/ya1z1n" target="_blank"><i class="fab fa-whatsapp me-2"></i> WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 DevPortfolio. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.padding = '10px 0';
+                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+                navbar.style.boxShadow = '0 4px 10px -1px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.padding = '20px 0';
+                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+            }
+        });
+
+        // Project filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projectItems = document.querySelectorAll('.project-item');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                    // Add active class to clicked button
+                    this.classList.add('active');
+
+                    const filter = this.getAttribute('data-filter');
+                    
+                    projectItems.forEach(item => {
+                        const categories = item.getAttribute('data-category').split(' ');
+                        
+                        if (filter === 'all' || categories.includes(filter)) {
+                            item.style.display = 'block';
+                            // Add animation
+                            setTimeout(() => {
+                                item.style.transform = 'translateY(0)';
+                                item.style.opacity = '1';
+                            }, 100);
+                        } else {
+                            item.style.transform = 'translateY(20px)';
+                            item.style.opacity = '0';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

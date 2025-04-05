@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Web Junior | Contacto</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">DevPortfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./proyectos.html">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre-mi.html">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contáctame</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="contacto-page-header text-center">
+        <div class="contacto-circle contacto-circle-1"></div>
+        <div class="contacto-circle contacto-circle-2"></div>
+        <div class="contacto-circle contacto-circle-3"></div>
+        <div class="container">
+            <h1>Contáctame</h1>
+            <p>¿Tienes un proyecto en mente o una oportunidad laboral? Estoy disponible para nuevos desafíos.</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contacto-section">
+        <div class="container">
+            <div class="contacto-card">
+                <div class="row g-0">
+                    <div class="col-lg-4">
+                        <div class="contacto-info">
+                            <h3>Información de Contacto</h3>
+                            <div class="contacto-item">
+                                <div class="contacto-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contacto-text">
+                                    <h4>Ubicación</h4>
+                                    <p>Tu Ciudad, País</p>
+                                </div>
+                            </div>
+                            <div class="contacto-item">
+                                <div class="contacto-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contacto-text">
+                                    <h4>Email</h4>
+                                    <p>tu@email.com</p>
+                                </div>
+                            </div>
+                            <div class="contacto-item">
+                                <div class="contacto-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contacto-text">
+                                    <h4>Teléfono</h4>
+                                    <p>+123 456 7890</p>
+                                </div>
+                            </div>
+                            <div class="contacto-item">
+                                <div class="contacto-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contacto-text">
+                                    <h4>Disponibilidad</h4>
+                                    <p>Lunes - Viernes: 9AM - 6PM</p>
+                                </div>
+                            </div>
+                            <div class="contacto-social-links">
+                                <a href="#"><i class="fab fa-github"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-codepen"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="contacto-form">
+                            <h3>Envíame un mensaje</h3>
+                            <form id="contactForm">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="name" class="contacto-form-label">Nombre Completo</label>
+                                            <input type="text" class="form-control contacto-form-control" id="name" placeholder="Tu nombre" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="email" class="contacto-form-label">Correo Electrónico</label>
+                                            <input type="email" class="form-control contacto-form-control" id="email" placeholder="tu@email.com" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="contacto-form-label">Asunto</label>
+                                    <input type="text" class="form-control contacto-form-control" id="subject" placeholder="Asunto de tu mensaje" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="contacto-form-label">Mensaje</label>
+                                    <textarea class="form-control contacto-form-control" id="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                                </div>
+                                <div class="form-check mb-4">
+                                    <input class="form-check-input" type="checkbox" id="privacyCheck" required>
+                                    <label class="form-check-label" for="privacyCheck">
+                                        Acepto la política de privacidad y el tratamiento de mis datos.
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn contacto-btn-primary">
+                                    <i class="fas fa-paper-plane me-2"></i>Enviar Mensaje
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="contacto-map-section">
+        <div class="container">
+            <div class="contacto-map-card">
+                <div class="contacto-map-placeholder d-flex flex-column align-items-center justify-content-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.5967903349042!2d-68.30703970121054!3d-34.62454806740236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9679a823c76dc0db%3A0xd2b7429c4584503f!2sRiobamba%2026%2C%20M5600%20San%20Rafael%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1743813529241!5m2!1ses-419!2sar" width="1116" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contacto-faq-section">
+        <div class="container">
+            <h2 class="contacto-section-title">Preguntas Frecuentes</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="contacto-accordion-item accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="contacto-accordion-button accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                    ¿Cuál es tu disponibilidad actual?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Actualmente estoy disponible para proyectos freelance y oportunidades laborales a tiempo completo. Mi disponibilidad horaria es flexible, lo que me permite adaptarme a diferentes zonas horarias y necesidades específicas del proyecto.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacto-accordion-item accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="contacto-accordion-button accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                    ¿Cómo es tu proceso de trabajo?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Mi proceso de trabajo comienza con una reunión inicial para entender tus necesidades y objetivos. Luego, desarrollo un plan de acción y cronograma. Mantengo comunicación constante durante todo el proyecto, con reuniones regulares para mostrar avances y recopilar feedback.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacto-accordion-item accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="contacto-accordion-button accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                    ¿Cuáles son tus tarifas?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Mis tarifas varían según el tipo y alcance del proyecto. Puedo trabajar por proyecto con un precio fijo acordado previamente o por hora, dependiendo de tus necesidades. Contáctame con los detalles de tu proyecto para recibir un presupuesto personalizado.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contacto-accordion-item accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="contacto-accordion-button accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                    ¿En qué tecnologías tienes experiencia?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Tengo experiencia trabajando con HTML5, CSS3, JavaScript, Bootstrap, React.js en frontend. Para backend, manejo Node.js, Express y conocimientos básicos de bases de datos como MySQL y MongoDB. También estoy familiarizado con herramientas como Git, GitHub y metodologías de desarrollo ágil.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>DevPortfolio</h5>
+                    <p>Desarrollador web junior enfocado en crear experiencias digitales atractivas y funcionales.</p>
+                </div>
+                <div class="col-md-2 mb-4 mb-md-0 footer-links">
+                    <h5>Navegar</h5>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="proyectos.html">Proyectos</a></li>
+                        <li><a href="sobre-mi.html">Sobre Mí</a></li>
+                        <li><a href="cv.html">CV</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4 mb-md-0 footer-links">
+                    <h5>Contacto</h5>
+                    <ul>
+                        <li><a href="mailto:tu@email.com"><i class="fas fa-envelope me-2"></i> tu@email.com</a></li>
+                        <li><a href="tel:+1234567890"><i class="fas fa-phone me-2"></i> +123 456 7890</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt me-2"></i> Tu Ciudad, País</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-links">
+                    <h5>Social</h5>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-github me-2"></i> GitHub</a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in me-2"></i> LinkedIn</a></li>
+                        <li><a href="#"><i class="fab fa-twitter me-2"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-codepen me-2"></i> CodePen</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 DevPortfolio. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Form validation and submission
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            
+            // Simple form validation
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            if (name && email && subject && message) {
+                // Here you would normally send the form data to a server
+                alert('¡Mensaje enviado correctamente! Te responderé lo antes posible.');
+                this.reset();
+            } else {
+                alert('Por favor completa todos los campos requeridos.');
+            }
+        });
+        
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.padding = '10px 0';
+                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+                navbar.style.boxShadow = '0 4px 10px -1px rgba(0, 0, 0, 0.1)';
+            } else {
+                navbar.style.padding = '20px 0';
+                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+            }
+        });
+    </script>
+</body>
+</html>
