@@ -58,8 +58,8 @@ body {
 
 /* Hero Section */
 .hero {
-    min-height: 65vh;
-    padding-top: 80px;
+    min-height: 100vh;
+    padding-top: 155px;
     position: relative;
     overflow: hidden;
 }
