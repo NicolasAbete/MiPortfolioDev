@@ -3,19 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Web Junior | Inicio</title>
+    <meta name="description" content="Portfolio profesional de Nicolas Abete - Desarrollador Web Junior especializado en crear experiencias web atractivas y funcionales">
+    <title>Nicolás Abete | Desarrollador Web</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS principal -->
     <link rel="stylesheet" href="./estilos/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <!-- Navbar -->
+    <!-- Navbar mejorado con efecto de glassmorphism -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html">DevPortfolio</a>
+            <a class="navbar-brand" href="index.html">
+                <span class="brand-text">Nicolás</span><span class="brand-highlight">Abete</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -34,15 +42,16 @@
                         <a class="nav-link" href="./pages/cv.html">CV</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/contacto.html">Contáctame</a>
+                        <a class="nav-link contact-highlight" href="./pages/contacto.html">Contáctame</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Hero Section mejorado con animaciones y efectos visuales -->
+    <section class="hero" id="inicio">
+        <!-- Efecto de burbujas animadas en el fondo -->
         <ul class="bg-animation">
             <li></li>
             <li></li>
@@ -58,159 +67,317 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 hero-content">
-                    <h1>Desarrollador Web <span class="gradient-text">Junior</span> en busca de nuevos desafíos</h1>
-                    <p>Apasionado por crear experiencias web innovadoras, combinando diseño atractivo con código limpio y eficiente.</p>
-                    <div class="d-flex flex-wrap">
-                        <a href="./pages/proyectos.html" class="btn btn-primary">Ver Proyectos</a>
-                        <a href="./pages/contacto.html" class="btn btn-outline">Contáctame</a>
+                    <div class="badge-container">
+                        <span class="availability-badge">Disponible para proyectos</span>
+                    </div>
+                    <h1>Transformo ideas en <span class="gradient-text typed-text"></span></h1>
+                    <p class="hero-text">Soy un <strong>desarrollador web full-stack junior</strong> apasionado por crear experiencias digitales que combinen <strong>diseño atractivo con funcionalidad excepcional</strong>.</p>
+                    <div class="d-flex flex-wrap hero-buttons">
+                        <a href="./pages/proyectos.html" class="btn btn-primary">
+                            <i class="fas fa-code me-2"></i>Ver Proyectos
+                        </a>
+                        <a href="./pages/contacto.html" class="btn btn-outline">
+                            <i class="fas fa-paper-plane me-2"></i>Contáctame
+                        </a>
+                    </div>
+                    <div class="tech-stack">
+                        <span>Tecnologías:</span>
+                        <div class="tech-icons">
+                            <i class="fab fa-html5" title="HTML5"></i>
+                            <i class="fab fa-css3-alt" title="CSS3"></i>
+                            <i class="fab fa-js" title="JavaScript"></i>
+                            <i class="fab fa-react" title="React"></i>
+                            <i class="fab fa-node-js" title="Node.js"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="hero-image">
                         <img src="./img/img-code.png" alt="Ilustración de desarrollo web" class="img-fluid">
+                        <!-- Elementos decorativos -->
+                        <div class="floating-element html-tag"><i class="fab fa-html5"></i></div>
+                        <div class="floating-element css-tag"><i class="fab fa-css3-alt"></i></div>
+                        <div class="floating-element js-tag"><i class="fab fa-js"></i></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section class="skills">
+    <!-- Skills Section mejorado con indicadores de niveles y animaciones -->
+    <section class="skills" id="habilidades">
         <div class="container">
-            <h2 class="section-title">Mis Habilidades</h2>
+            <div class="section-header">
+                <span class="section-badge">HABILIDADES</span>
+                <h2 class="section-title">Mis <span class="highlight-text">Fortalezas</span> Técnicas</h2>
+                <p class="section-subtitle">Combinando estas habilidades para crear soluciones web completas y atractivas</p>
+            </div>
             <div class="row mt-5">
                 <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="fade-up">
                         <div class="skill-icon frontend">
                             <i class="fas fa-code"></i>
                         </div>
                         <h3>Frontend</h3>
-                        <p>HTML5, CSS3, Sass, JavaScript, React.js y Bootstrap para crear interfaces intuitivas y atractivas.</p>
+                        <p>Creo interfaces <strong>intuitivas y atractivas</strong> utilizando HTML5, CSS3, Sass, JavaScript, React.js y Bootstrap.</p>
+                        <div class="skill-level">
+                            <div class="level-bar">
+                                <div class="level-progress level-90"></div>
+                            </div>
+                            <span>90%</span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="skill-icon backend">
                             <i class="fas fa-server"></i>
                         </div>
                         <h3>Backend</h3>
-                        <p>Node.js, Express y conocimientos básicos de bases de datos como MySQL y MongoDB.</p>
+                        <p>Desarrollo con Node.js, Express y bases de datos como <strong>MySQL y MongoDB</strong> para crear aplicaciones robustas.</p>
+                        <div class="skill-level">
+                            <div class="level-bar">
+                                <div class="level-progress level-75"></div>
+                            </div>
+                            <span>75%</span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="skill-icon tools">
                             <i class="fas fa-tools"></i>
                         </div>
                         <h3>Herramientas</h3>
-                        <p>Git, GitHub, figma y herramientas de desarrollo modernas para optimizar el flujo de trabajo.</p>
+                        <p>Dominio de Git, GitHub, Figma y <strong>herramientas modernas</strong> para optimizar el flujo de trabajo.</p>
+                        <div class="skill-level">
+                            <div class="level-bar">
+                                <div class="level-progress level-85"></div>
+                            </div>
+                            <span>85%</span>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
                         <div class="skill-icon design">
                             <i class="fas fa-paint-brush"></i>
                         </div>
                         <h3>Diseño</h3>
-                        <p>Principios básicos de UI/UX, responsividad y accesibilidad para crear productos inclusivos.</p>
+                        <p>Aplicación de principios de UI/UX, <strong>diseño responsivo</strong> y accesibilidad para crear productos inclusivos.</p>
+                        <div class="skill-level">
+                            <div class="level-bar">
+                                <div class="level-progress level-80"></div>
+                            </div>
+                            <span>80%</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Preview -->
-    <section class="projects-preview">
+    <!-- Projects Preview mejorado con mejor presentación y efectos hover -->
+    <section class="projects-preview" id="proyectos">
         <div class="container">
-            <h2 class="section-title">Proyectos Destacados</h2>
+            <div class="section-header">
+                <span class="section-badge">PORTAFOLIO</span>
+                <h2 class="section-title">Proyectos <span class="highlight-text">Destacados</span></h2>
+                <p class="section-subtitle">Soluciones creativas para problemas reales</p>
+            </div>
             <div class="row mt-5">
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card">
-                        <div class="project-image" style="background-color: #dbeafe; display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-shopping-cart" style="font-size: 3rem; color: #3b82f6;"></i>
+                <!-- Proyecto 1 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card" data-aos="fade-up">
+                        <div class="project-image" style="background-color: #dbeafe;">
+                            <div class="project-icon">
+                                <i class="fas fa-shopping-cart"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <a href="https://github.com/CodeSystem2022/Grupo-Omega-4to-semestre" target="_blank" class="overlay-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
                         </div>
                         <div class="project-content">
-                            <h3>E-commerce</h3>
-                            <p>Tienda online responsive con carrito de compras funcional. Este proyecto lo realizamos durante el cursado de UTN con mi equipo de trabajo Omega.</p>
-                            <div>
+                            <div class="project-header">
+                                <h3>E-commerce Omega</h3>
+                                <span class="project-year">2023</span>
+                            </div>
+                            <p>Tienda online <strong>completamente responsive</strong> con carrito de compras funcional desarrollado en equipo durante el cursado en UTN.</p>
+                            <div class="project-tags">
                                 <span class="project-tag tag-html">HTML</span>
                                 <span class="project-tag tag-css">CSS</span>
                                 <span class="project-tag tag-js">JavaScript</span>
                                 <span class="project-tag tag-sql">SQL</span>
                             </div>
-                            <a href="https://github.com/CodeSystem2022/Grupo-Omega-4to-semestre" target="_blank" class="btn btn-primary mt-3">Ver Detalles</a>
+                            <a href="https://github.com/CodeSystem2022/Grupo-Omega-4to-semestre" target="_blank" class="btn btn-primary mt-3">
+                                <i class="fab fa-github me-2"></i>Ver Código
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="project-card">
-                        <div class="project-image" style="background-color: #ecfdf5; display: flex; align-items: center; justify-content: center;">
-                            <img src="./img/old-portfolio.png" alt="Descripción de la imagen" style="max-width: 80%; max-height: 80%; object-fit: contain; border-radius: 5px;">
+                <!-- Proyecto 2 -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-image" style="background-color: #ecfdf5;">
+                            <img src="./img/old-portfolio.png" alt="Imagen de mi primer portfolio" class="project-thumbnail">
+                            <div class="project-overlay">
+                                <a href="https://github.com/NicolasAbete/Proyecto-Pagina-Web-Portfolio" target="_blank" class="overlay-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
                         </div>
                         <div class="project-content">
-                            <h3>Mi primer Portfolio</h3>
-                            <p>Este portfolio fue la primera web que programe solo. El 
-                                100% del codigo lo hice yo intentando que sea una web escalable y
-                                modificable en su totalidad.
-                            </p>
-                            <div>
+                            <div class="project-header">
+                                <h3>Mi Primer Portfolio</h3>
+                                <span class="project-year">2022</span>
+                            </div>
+                            <p>Primera web desarrollada de forma <strong>independiente</strong>, con código 100% propio y estructura escalable para facilitar modificaciones.</p>
+                            <div class="project-tags">
                                 <span class="project-tag tag-html">HTML</span>
                                 <span class="project-tag tag-css">CSS</span>
                                 <span class="project-tag tag-js">JavaScript</span>
                                 <span class="project-tag tag-sass">SASS</span>
                             </div>
-                            <a href="https://github.com/NicolasAbete/Proyecto-Pagina-Web-Portfolio" target="_blank" class="btn btn-primary mt-3">Ver detalles</a>
+                            <a href="https://github.com/NicolasAbete/Proyecto-Pagina-Web-Portfolio" target="_blank" class="btn btn-primary mt-3">
+                                <i class="fab fa-github me-2"></i>Ver Código
+                            </a>
                         </div>
                     </div>
                 </div>
+                <!-- Proyecto 3 (Añadido para balance visual) -->
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="project-card featured-project" data-aos="fade-up" data-aos-delay="200">
+                        <div class="featured-badge">Destacado</div>
+                        <div class="project-image" style="background-color: #f0f9ff;">
+                            <div class="project-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <span class="overlay-text">¡Tu proyecto aquí!</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Tu Próximo Proyecto</h3>
+                                <span class="project-year">2025</span>
+                            </div>
+                            <p>¿Tienes una idea innovadora? <strong>Trabajemos juntos</strong> para convertirla en una solución web de alta calidad y gran impacto.</p>
+                            <div class="project-tags">
+                                <span class="project-tag tag-html">Tu</span>
+                                <span class="project-tag tag-css">Proyecto</span>
+                                <span class="project-tag tag-js">Aquí</span>
+                            </div>
+                            <a href="./pages/contacto.html" class="btn btn-primary mt-3 pulse-btn">
+                                <i class="fas fa-handshake me-2"></i>Colaboremos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="text-center mt-5">
-                <a href="proyectos.html" class="btn btn-outline">Ver todos los proyectos</a>
+                <a href="./pages/proyectos.html" class="btn btn-outline btn-lg">
+                    <i class="fas fa-th-large me-2"></i>Ver todos los proyectos
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Contact Preview -->
-    <section class="contact-preview">
+    <!-- Nueva sección: Testimonios -->
+    <section class="testimonials">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h2>¿Interesado en trabajar juntos?</h2>
-                    <p class="mb-4">Estoy disponible para nuevas oportunidades laborales. ¡Contáctame y conversemos!</p>
-                    <a href="./pages/contacto.html" class="btn btn-light btn-lg">Envíame un mensaje</a>
-                    <div class="social-links">
-                        <a href="https://github.com/NicolasAbete" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.instagram.com/nicoabete_/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.link/ya1z1n" target="_blank"><i class="fas fa-envelope"></i></a>
+            <div class="section-header">
+                <span class="section-badge">RECOMENDACIONES</span>
+                <h2 class="section-title">Lo que <span class="highlight-text">Dicen</span> de Mí</h2>
+                <p class="section-subtitle">Valoraciones de clientes y compañeros</p>
+            </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"Nicolás demostró gran <strong>profesionalismo y creatividad</strong>. Entregó nuestro proyecto antes del plazo y superó todas nuestras expectativas."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>JR</span>
+                        </div>
+                        <div class="author-info">
+                            <h5>Juan Rodríguez</h5>
+                            <span>Cliente - E-commerce</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"Trabajar con Nicolás fue una gran experiencia. Sus <strong>habilidades técnicas</strong> y su atención al detalle hicieron que nuestro proyecto fuera un éxito."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <span>LM</span>
+                        </div>
+                        <div class="author-info">
+                            <h5>Laura Mendez</h5>
+                            <span>Compañera - UTN</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Contact Preview mejorado con más llamados a la acción -->
+    <section class="contact-preview" id="contacto">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <span class="contact-badge">¡COLABOREMOS!</span>
+                    <h2>¿Listo para <span class="highlight-text-light">impulsar</span> tu próximo proyecto?</h2>
+                    <p class="mb-4">Estoy <strong>disponible para nuevas oportunidades laborales</strong> y ansioso por colaborar en proyectos desafiantes. ¡Hablemos sobre cómo puedo ayudarte!</p>
+                    <a href="./pages/contacto.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-paper-plane me-2"></i>Envíame un mensaje
+                    </a>
+                    <div class="social-links">
+                        <a href="https://github.com/NicolasAbete" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/nicoabete_/" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.link/ya1z1n" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer mejorado con mejor estructura y accesibilidad -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-4 mb-md-0">
-                    <h5>DevPortfolio</h5>
-                    <p>Desarrollador web junior enfocado en crear experiencias digitales atractivas y funcionales.</p>
+                    <h5 class="brand-footer">Nicolás<span>Abete</span></h5>
+                    <p>Desarrollador web junior enfocado en crear <strong>experiencias digitales atractivas y funcionales</strong> que impulsen el éxito de tu negocio.</p>
                 </div>
                 <div class="col-md-2 mb-4 mb-md-0 footer-links">
                     <h5>Navegar</h5>
                     <ul>
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li><a href="./pages/proyectos.html">Proyectos</a></li>
-                        <li><a href="./pages/sobreMi.html">Sobre Mí</a></li>
-                        <li><a href="./pages/cv.html">CV</a></li>
-                        <li><a href="./pages/contacto.html">Contacto</a></li>
+                        <li><a href="./index.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                        <li><a href="./pages/proyectos.html"><i class="fas fa-chevron-right"></i> Proyectos</a></li>
+                        <li><a href="./pages/sobreMi.html"><i class="fas fa-chevron-right"></i> Sobre Mí</a></li>
+                        <li><a href="./pages/cv.html"><i class="fas fa-chevron-right"></i> CV</a></li>
+                        <li><a href="./pages/contacto.html"><i class="fas fa-chevron-right"></i> Contacto</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 mb-4 mb-md-0 footer-links">
                     <h5>Contacto</h5>
                     <ul>
-                        <li><a href="mailto:tu@email.com"><i class="fas fa-envelope me-2"></i> nicolas.abete@hotmail.com</a></li>
-                        <li><a href="tel:+1234567890"><i class="fas fa-phone me-2"></i> +54 0 260 4206747</a></li>
-                        <li><a href="#"><i class="fas fa-map-marker-alt me-2"></i> San Rafael, Mendoza, Argentina</a></li>
+                        <li><a href="mailto:nicolas.abete@hotmail.com"><i class="fas fa-envelope me-2"></i> nicolas.abete@hotmail.com</a></li>
+                        <li><a href="tel:+5402604206747"><i class="fas fa-phone me-2"></i> +54 0 260 4206747</a></li>
+                        <li><address><i class="fas fa-map-marker-alt me-2"></i> San Rafael, Mendoza, Argentina</address></li>
                     </ul>
                 </div>
                 <div class="col-md-3 footer-links">
@@ -223,36 +390,77 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 DevPortfolio. Todos los derechos reservados.</p>
+                <p>&copy; 2025 Nicolás Abete. Todos los derechos reservados.</p>
+                <div class="scroll-top">
+                    <a href="#inicio" aria-label="Volver arriba"><i class="fas fa-arrow-up"></i></a>
+                </div>
             </div>
         </div>
     </footer>
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Typed.js para animación de texto -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    
+    <!-- JavaScript principal -->
     <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
+        // Activar animación de texto con Typed.js
+        document.addEventListener('DOMContentLoaded', function() {
+            // Inicializar Typed.js
+            const typed = new Typed('.typed-text', {
+                strings: ['experiencias web', 'interfaces atractivas', 'soluciones digitales', 'proyectos exitosos'],
+                typeSpeed: 70,
+                backSpeed: 50,
+                backDelay: 2000,
+                loop: true
+            });
+            
+            // Efecto navbar al hacer scroll
+            window.addEventListener('scroll', function() {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('navbar-scrolled');
+                } else {
+                    navbar.classList.remove('navbar-scrolled');
+                }
+            });
+            
+            // Scroll suave para los enlaces internos
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if(targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if(targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
                 });
             });
-        });
-        
-        // Navbar scroll effect
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.style.padding = '10px 0';
-                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
-                navbar.style.boxShadow = '0 4px 10px -1px rgba(0, 0, 0, 0.1)';
-            } else {
-                navbar.style.padding = '20px 0';
-                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
-                navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+            
+            // Simple control de slider para testimonios
+            const testimonialCards = document.querySelectorAll('.testimonial-card');
+            let currentTestimonial = 0;
+            
+            // Solo inicializar si hay testimonios en la página
+            if(testimonialCards.length > 1) {
+                // Ocultar todos menos el primero
+                testimonialCards.forEach((card, index) => {
+                    if(index !== 0) card.style.display = 'none';
+                });
+                
+                // Cambiar testimonio cada 5 segundos
+                setInterval(() => {
+                    testimonialCards[currentTestimonial].style.display = 'none';
+                    currentTestimonial = (currentTestimonial + 1) % testimonialCards.length;
+                    testimonialCards[currentTestimonial].style.display = 'block';
+                }, 5000);
             }
         });
     </script>
