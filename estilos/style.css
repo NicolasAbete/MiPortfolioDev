@@ -1224,6 +1224,10 @@ textarea.contacto-form-control {
     transform: translateX(-50%);
   }
 }
+.sobreMi-img {
+  width: 30%;
+}
+
 .about-section {
   padding: var(--space-6) 0 var(--space-5);
   background-color: var(--light-color);

@@ -1436,6 +1436,10 @@ textarea.contacto-form-control {
 }
   // Estilos para la sección Sobre Mí
 
+.sobreMi-img {
+    width: 30%;
+}
+
 .about {
     &-section {
         padding: var(--space-6) 0 var(--space-5);
