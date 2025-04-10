@@ -1224,8 +1224,9 @@ textarea.contacto-form-control {
     transform: translateX(-50%);
   }
 }
+
 .sobreMi-img {
-  width: 30%;
+    width: 30%;
 }
 
 .about-section {
