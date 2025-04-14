@@ -3,21 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Web Junior | Sobre Mí</title>
+    
+    <!-- Meta tags SEO mejorados -->
+    <meta name="description" content="Conoce a Nicolás Abete, desarrollador web full-stack junior en San Rafael, Mendoza. Especializado en HTML, CSS, JavaScript, React y Node.js con experiencia en proyectos colaborativos e interfaces intuitivas.">
+    <meta name="keywords" content="Nicolás Abete, desarrollador web, frontend, backend, full-stack, HTML, CSS, JavaScript, San Rafael, Mendoza, biografía desarrollador, portfolio desarrollador">
+    <meta name="author" content="Nicolás Abete">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Sobre Mí | Nicolás Abete - Desarrollador Web Full-Stack Junior">
+    <meta property="og:description" content="Biografía profesional de Nicolás Abete, desarrollador web full-stack junior en San Rafael, Mendoza. Descubre mi trayectoria, formación y pasión por el desarrollo web.">
+    <meta property="og:image" content="../img/nicoCara.jpeg">
+    <meta property="og:url" content="https://nicolasabete.com.ar/pages/sobreMi.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sobre Mí | Nicolás Abete - Desarrollador Web Full-Stack Junior">
+    <meta name="twitter:description" content="Biografía profesional de Nicolás Abete, desarrollador web full-stack junior en San Rafael, Mendoza.">
+    
+    <title>Sobre Mí | Nicolás Abete - Desarrollador Web Full-Stack Junior</title>
+    
+    <!-- Enlaces preload para optimización -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS principal -->
     <link rel="stylesheet" href="../estilos/style.css">
     
+    <!-- Favicon y compatibilidad -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="canonical" href="https://nicolasabete.com.ar/pages/sobreMi.html">
+    
+    <!-- Datos estructurados (Schema.org) para SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "mainEntity": {
+            "@type": "Person",
+            "name": "Nicolás Abete",
+            "url": "https://nicolasabete.com.ar",
+            "jobTitle": "Desarrollador Web Full-Stack Junior",
+            "description": "Desarrollador web junior apasionado por crear experiencias digitales atractivas y funcionales. Especializado en frontend con conocimientos de backend.",
+            "image": "../img/nicoCara.jpeg",
+            "sameAs": [
+                "https://github.com/NicolasAbete",
+                "https://www.instagram.com/nicoabete_/"
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "San Rafael",
+                "addressRegion": "Mendoza",
+                "addressCountry": "Argentina"
+            },
+            "alumniOf": {
+                "@type": "EducationalOrganization",
+                "name": "Universidad Tecnológica Nacional",
+                "alternateName": "UTN"
+            },
+            "knowsAbout": ["HTML", "CSS", "JavaScript", "React", "Node.js", "Diseño UX/UI"]
+        }
+    }
+    </script>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" aria-label="Navegación principal">
         <div class="container">
-            <a class="navbar-brand" href="../index.html">DevPortfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="../index.html" aria-label="Inicio">
+                <span class="brand-text">MiPortfolio</span><span class="brand-highlight">Dev</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" 
+                    aria-expanded="false" aria-label="Alternar navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -29,7 +93,7 @@
                         <a class="nav-link" href="./proyectos.html">Proyectos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./sobreMi.html">Sobre Mí</a>
+                        <a class="nav-link active" href="./sobreMi.html" aria-current="page">Sobre Mí</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./cv.html">CV</a>
@@ -42,22 +106,35 @@
         </div>
     </nav>
 
+    <!-- Header Section -->
+    <header class="about-header" aria-labelledby="about-heading">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-badge">MI HISTORIA</span>
+                <h1 id="about-heading">Sobre <span class="highlight-text">Mí</span></h1>
+                <p class="section-subtitle">Conoce mi trayectoria, experiencia y pasión por el desarrollo web</p>
+            </div>
+        </div>
+    </header>
+
     <!-- About Section -->
-    <section class="about-section">
+    <section class="about-section" aria-labelledby="bio-heading">
         <div class="container">
             <div class="about-intro">
                 <div class="row align-items-center">
                     <div class="col-lg-5 sobreMi-img">
                         <div class="about-image">
-                            <img src="../img/nicoCara.jpeg" alt="Foto de perfil" class="img-fluid" onerror="this.src='/api/placeholder/400/400'; this.alt='Placeholder de foto de perfil'">
+                            <img src="../img/nicoCara.jpeg" alt="Nicolás Abete - Desarrollador Web Full-Stack" 
+                                    class="img-fluid" width="400" height="400" loading="eager"
+                                    onerror="this.src='/api/placeholder/400/400'; this.alt='Imagen de perfil de Nicolás Abete'">
                         </div>
                     </div>
                     <div class="col-lg-7">
                         <div class="about-content">
-                            <h2>Sobre mí</h2>
-                            <p>Soy un desarrollador web junior apasionado por crear experiencias digitales atractivas y funcionales. Desde que descubrí el mundo de la programación, me ha fascinado cómo la tecnología puede transformar ideas en realidades interactivas.</p>
-                            <p>Me especializo en el desarrollo frontend, con un enfoque particular en la creación de interfaces intuitivas que combinan diseño estético con funcionalidad práctica. También tengo conocimientos básicos de backend que me permiten entender el ecosistema completo de desarrollo web.</p>
-                            <p>Mi filosofía de trabajo se basa en el aprendizaje continuo, la atención al detalle y la búsqueda constante de soluciones creativas a problemas complejos.</p>
+                            <h2 id="bio-heading">Mi camino en el desarrollo web</h2>
+                            <p>Soy un <strong>desarrollador web junior</strong> apasionado por crear experiencias digitales atractivas y funcionales. Desde que descubrí el mundo de la programación, me ha fascinado cómo la tecnología puede transformar ideas en realidades interactivas.</p>
+                            <p>Me especializo en el <strong>desarrollo frontend</strong>, con un enfoque particular en la creación de interfaces intuitivas que combinan diseño estético con funcionalidad práctica. También tengo conocimientos básicos de <strong>backend</strong> que me permiten entender el ecosistema completo de desarrollo web.</p>
+                            <p>Mi filosofía de trabajo se basa en el <strong>aprendizaje continuo</strong>, la atención al detalle y la búsqueda constante de soluciones creativas a problemas complejos.</p>
                         </div>
                     </div>
                 </div>
@@ -65,96 +142,100 @@
 
             <div class="row my-5">
                 <div class="col-12 text-center">
-                    <h2 class="section-title">Mi Trayectoria</h2>
+                    <h2 class="section-title" id="timeline-heading">Mi Trayectoria Profesional</h2>
                 </div>
             </div>
 
-            <div class="timeline clearfix">
-                <div class="timeline-item">
-                    <span class="timeline-date">2023 - Presente</span>
-                    <h3 class="timeline-title">Desarrollador Web Junior</h3>
-                    <p>Trabajando en proyectos personales y colaborativos para expandir mi portafolio y mejorar mis habilidades técnicas.</p>
+            <!-- Timeline Section con microdata -->
+            <div class="timeline clearfix" aria-labelledby="timeline-heading">
+                <div class="timeline-item" itemscope itemtype="https://schema.org/Event">
+                    <span class="timeline-date" itemprop="startDate">2023 - Presente</span>
+                    <h3 class="timeline-title" itemprop="name">Desarrollador Web Junior</h3>
+                    <p itemprop="description">Trabajando en proyectos personales y colaborativos para expandir mi portafolio y mejorar mis habilidades técnicas en desarrollo web moderno.</p>
                 </div>
-                <div class="timeline-item">
-                    <span class="timeline-date">2022 - 2023</span>
-                    <h3 class="timeline-title">Estudiante de Programación</h3>
-                    <p>Formación intensiva en desarrollo web full-stack con enfoque en tecnologías modernas. Participación en proyectos de equipo y horas de programacion en mi paso por la universidad UTN.</p>
+                <div class="timeline-item" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+                    <span class="timeline-date" itemprop="dateCreated">2022 - 2023</span>
+                    <h3 class="timeline-title" itemprop="credentialCategory">Estudiante de Programación</h3>
+                    <p itemprop="description">Formación intensiva en desarrollo web full-stack con enfoque en tecnologías modernas. Participación en proyectos de equipo y horas de programación en mi paso por la <span itemprop="educationalCredentialAwarded">Universidad Tecnológica Nacional (UTN)</span>.</p>
                 </div>
-                <div class="timeline-item">
-                    <span class="timeline-date">2021 - 2022</span>
-                    <h3 class="timeline-title">Primeros Pasos</h3>
-                    <p>Descubrimiento de la programación y aprendizaje autodidacta de HTML, CSS y JavaScript básico.</p>
+                <div class="timeline-item" itemscope itemtype="https://schema.org/Event">
+                    <span class="timeline-date" itemprop="startDate">2021 - 2022</span>
+                    <h3 class="timeline-title" itemprop="name">Primeros Pasos</h3>
+                    <p itemprop="description">Descubrimiento de la programación y aprendizaje autodidacta de HTML, CSS y JavaScript básico a través de cursos online y proyectos prácticos.</p>
                 </div>
-                <div class="timeline-item">
-                    <span class="timeline-date">2020</span>
-                    <h3 class="timeline-title">Formación Académica</h3>
-                    <p>Estudios en áreas relacionadas con la tecnología que despertaron mi interés por el desarrollo web. Un curso de desarrollo de videojuegos llamo mi atencion por la programación</p>
+                <div class="timeline-item" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
+                    <span class="timeline-date" itemprop="dateCreated">2020</span>
+                    <h3 class="timeline-title" itemprop="credentialCategory">Formación Académica</h3>
+                    <p itemprop="description">Estudios en áreas relacionadas con la tecnología que despertaron mi interés por el desarrollo web. Un curso de desarrollo de videojuegos llamó mi atención por la programación y sus posibilidades creativas.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Interests Section -->
-    <section class="interests">
+    <section class="interests" aria-labelledby="interests-heading">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-5">
-                    <h2 class="section-title">Mis Intereses</h2>
+                    <h2 class="section-title" id="interests-heading">Mis Intereses y Especialidades</h2>
+                    <p class="section-subtitle">Áreas de conocimiento y pasiones profesionales</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="interest-card">
+                    <div class="interest-card" data-aos="fade-up">
                         <div class="interest-icon">
-                            <i class="fas fa-code"></i>
+                            <i class="fas fa-code" aria-hidden="true"></i>
                         </div>
                         <h3>Programación</h3>
-                        <p>Explorar nuevos lenguajes y frameworks para expandir mis habilidades técnicas.</p>
+                        <p>Explorar nuevos lenguajes y frameworks para expandir mis habilidades técnicas y mantenerme actualizado con las últimas tendencias.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="interest-card">
+                    <div class="interest-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="interest-icon">
-                            <i class="fas fa-lightbulb"></i>
+                            <i class="fas fa-lightbulb" aria-hidden="true"></i>
                         </div>
                         <h3>Diseño UX/UI</h3>
-                        <p>Crear interfaces que sean tanto estéticamente atractivas como funcionales para el usuario.</p>
+                        <p>Crear interfaces que sean tanto estéticamente atractivas como funcionales para el usuario, mejorando la experiencia global.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="interest-card">
+                    <div class="interest-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="interest-icon">
-                            <i class="fas fa-book"></i>
+                            <i class="fas fa-book" aria-hidden="true"></i>
                         </div>
                         <h3>Aprendizaje</h3>
-                        <p>Mantenerme actualizado con las últimas tendencias y tecnologías en desarrollo web.</p>
+                        <p>Mantenerme actualizado con las últimas tendencias y tecnologías en desarrollo web mediante formación continua y autodidacta.</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="interest-card">
+                    <div class="interest-card" data-aos="fade-up" data-aos-delay="300">
                         <div class="interest-icon">
-                            <i class="fas fa-users"></i>
+                            <i class="fas fa-users" aria-hidden="true"></i>
                         </div>
                         <h3>Colaboración</h3>
-                        <p>Trabajar en equipo para desarrollar soluciones innovadoras y efectivas.</p>
+                        <p>Trabajar en equipo para desarrollar soluciones innovadoras y efectivas, combinando diferentes perspectivas y habilidades.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    
-
     <!-- Call to Action -->
-    <section class="cta py-5 bg-white">
+    <section class="cta py-5 bg-white" aria-labelledby="cta-heading">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 text-center">
-                    <h3 class="mb-4">¿Quieres saber más?</h3>
-                    <p class="mb-4">Revisa mi CV completo o contáctame para hablar sobre posibles colaboraciones.</p>
+                    <h3 class="mb-4" id="cta-heading">¿Quieres saber más sobre mi experiencia?</h3>
+                    <p class="mb-4">Revisa mi CV completo o contáctame para hablar sobre posibles colaboraciones y oportunidades profesionales.</p>
                     <div class="d-flex justify-content-center flex-wrap">
-                        <a href="../cv.html" class="btn btn-primary me-3 mb-3 mb-md-0">Ver CV</a>
-                        <a href="./contacto.html" class="btn btn-outline">Contáctame</a>
+                        <a href="./cv.html" class="btn btn-primary me-3 mb-3 mb-md-0">
+                            <i class="fas fa-file-alt me-2" aria-hidden="true"></i>Ver CV Completo
+                        </a>
+                        <a href="./contacto.html" class="btn btn-outline">
+                            <i class="fas fa-paper-plane me-2" aria-hidden="true"></i>Contáctame
+                        </a>
                     </div>
                 </div>
             </div>
@@ -162,71 +243,126 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer aria-label="Información de contacto y navegación">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-4 mb-md-0">
-                    <h5>DevPortfolio</h5>
-                    <p>Desarrollador web junior enfocado en crear experiencias digitales atractivas y funcionales.</p>
+                    <h5 class="brand-footer">Nicolás<span>Abete</span></h5>
+                    <p>Desarrollador web junior enfocado en crear <strong>experiencias digitales atractivas y funcionales</strong> que impulsen el éxito de tu negocio.</p>
                 </div>
                 <div class="col-md-2 mb-4 mb-md-0 footer-links">
                     <h5>Navegar</h5>
                     <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./proyectos.html">Proyectos</a></li>
-                        <li><a href="./sobreMi.html">Sobre Mí</a></li>
-                        <li><a href="./cv.html">CV</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li><a href="../index.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Inicio</a></li>
+                        <li><a href="./proyectos.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Proyectos</a></li>
+                        <li><a href="./sobreMi.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Sobre Mí</a></li>
+                        <li><a href="./cv.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> CV</a></li>
+                        <li><a href="./contacto.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Contacto</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 mb-4 mb-md-0 footer-links">
                     <h5>Contacto</h5>
                     <ul>
-                        <li><a href="mailto:nicolas.abete@hotmail.com"><i class="fas fa-envelope me-2"></i> nicolas.abete@hotmail.com</a></li>
-                        <li><a href="tel:+542604206747"><i class="fas fa-phone me-2"></i> +54 0 260 4206747</a></li>
-                        <li><a href="#"><i class="fas fa-map-marker-alt me-2"></i> San Rafael, Mendoza, Argentina</a></li>
+                        <li><a href="mailto:nicolas.abete@hotmail.com"><i class="fas fa-envelope me-2" aria-hidden="true"></i> nicolas.abete@hotmail.com</a></li>
+                        <li><a href="tel:+5402604206747"><i class="fas fa-phone me-2" aria-hidden="true"></i> +54 0 260 4206747</a></li>
+                        <li><address><i class="fas fa-map-marker-alt me-2" aria-hidden="true"></i> San Rafael, Mendoza, Argentina</address></li>
                     </ul>
                 </div>
                 <div class="col-md-3 footer-links">
                     <h5>Social</h5>
                     <ul>
-                        <li><a href="https://github.com/NicolasAbete" target="_blank"><i class="fab fa-github me-2"></i> GitHub</a></li>
-                        <li><a href="https://www.instagram.com/nicoabete_/" target="_blank"><i class="fab fa-instagram me-2"></i> Instagram</a></li>
-                        <li><a href="https://wa.link/ya1z1n" target="_blank"><i class="fab fa-whatsapp me-2"></i> WhatsApp</a></li>
+                        <li><a href="https://github.com/NicolasAbete" target="_blank" rel="noopener"><i class="fab fa-github me-2" aria-hidden="true"></i> GitHub</a></li>
+                        <li><a href="https://www.instagram.com/nicoabete_/" target="_blank" rel="noopener"><i class="fab fa-instagram me-2" aria-hidden="true"></i> Instagram</a></li>
+                        <li><a href="https://wa.link/ya1z1n" target="_blank" rel="noopener"><i class="fab fa-whatsapp me-2" aria-hidden="true"></i> WhatsApp</a></li>
                     </ul>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 DevPortfolio. Todos los derechos reservados.</p>
+                <p>&copy; 2025 Nicolás Abete. Todos los derechos reservados.</p>
+                <div class="scroll-top">
+                    <a href="#" aria-label="Volver arriba"><i class="fas fa-arrow-up" aria-hidden="true"></i></a>
+                </div>
             </div>
         </div>
     </footer>
 
     <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" defer></script>
     <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
+        // Carga optimizada de scripts
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling optimizado
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if(targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if(targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
                 });
             });
-        });
-        
-        // Navbar scroll effect
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.style.padding = '10px 0';
-                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
-                navbar.style.boxShadow = '0 4px 10px -1px rgba(0, 0, 0, 0.1)';
-            } else {
-                navbar.style.padding = '20px 0';
-                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
-                navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+            
+            // Navbar scroll effect - optimizado con requestAnimationFrame
+            let lastScrollPosition = window.scrollY;
+            let ticking = false;
+            
+            function updateNavbar() {
+                const navbar = document.querySelector('.navbar');
+                if (lastScrollPosition > 50) {
+                    navbar.style.padding = '10px 0';
+                    navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+                    navbar.style.boxShadow = '0 4px 10px -1px rgba(0, 0, 0, 0.1)';
+                } else {
+                    navbar.style.padding = '20px 0';
+                    navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+                    navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+                }
+                ticking = false;
+            }
+
+            window.addEventListener('scroll', function() {
+                lastScrollPosition = window.scrollY;
+                if (!ticking) {
+                    window.requestAnimationFrame(updateNavbar);
+                    ticking = true;
+                }
+            }, { passive: true });
+            
+            // Detectar si el navegador tiene soporte para Intersection Observer
+            if ('IntersectionObserver' in window) {
+                const interestCards = document.querySelectorAll('.interest-card');
+                
+                // Opciones para el observador
+                const options = {
+                    root: null,
+                    rootMargin: '0px',
+                    threshold: 0.1
+                };
+                
+                // Callback cuando los elementos son visibles
+                const callback = (entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('animate-in');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                };
+                
+                // Crear el observador
+                const observer = new IntersectionObserver(callback, options);
+                
+                // Observar cada tarjeta de interés
+                interestCards.forEach(card => {
+                    observer.observe(card);
+                });
             }
         });
     </script>

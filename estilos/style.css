@@ -1228,6 +1228,9 @@ textarea.contacto-form-control {
   width: 30%;
 }
 
+.about-header {
+  margin-top: 100px;
+}
 .about-section {
   padding: var(--space-6) 0 var(--space-5);
   background-color: var(--light-color);

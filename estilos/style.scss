@@ -1441,6 +1441,11 @@ textarea.contacto-form-control {
 }
 
 .about {
+    
+    &-header {
+        margin-top: 100px;
+    }
+    
     &-section {
         padding: var(--space-6) 0 var(--space-5);
         background-color: var(--light-color);
