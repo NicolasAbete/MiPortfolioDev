@@ -1237,7 +1237,7 @@ textarea.contacto-form-control {
   margin-top: var(--space-6);
 }
 .about-intro {
-  margin-bottom: var(--space-5);
+  margin-bottom: 180px;
 }
 .about-image {
   border-radius: 16px;
