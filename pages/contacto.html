@@ -3,19 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Web Junior | Contacto</title>
-    <!-- Bootstrap CSS -->
+    
+    <!-- Meta tags SEO mejorados -->
+    <meta name="description" content="Contáctame para proyectos web, oportunidades laborales o consultas. Desarrollador Web Full-Stack Junior en San Rafael, Mendoza con experiencia en HTML, CSS, JavaScript, React y Node.js.">
+    <meta name="keywords" content="contacto desarrollador web, contratar programador, freelance web, servicios desarrollo web, San Rafael, Mendoza, Nicolás Abete">
+    <meta name="author" content="Nicolás Abete">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Contacta con Nicolás Abete | Desarrollador Web Full-Stack Junior">
+    <meta property="og:description" content="¿Tienes un proyecto en mente o una oportunidad laboral? Contáctame para convertir tus ideas en soluciones web funcionales y atractivas.">
+    <meta property="og:image" content="../img/img-code.png">
+    <meta property="og:url" content="https://nicolasabete.com.ar/pages/contacto.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contacta con Nicolás Abete | Desarrollador Web Junior">
+    <meta name="twitter:description" content="Disponible para proyectos web y oportunidades laborales en San Rafael, Mendoza y remotamente.">
+    
+    <title>Contacto | Nicolás Abete - Desarrollador Web Full-Stack en Argentina</title>
+    
+    <!-- Bootstrap CSS con preload -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" as="style">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
+    <!-- Font Awesome con preload -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts - Preload para optimizar -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- CSS principal con preload -->
+    <link rel="preload" href="../estilos/style.css" as="style">
     <link rel="stylesheet" href="../estilos/style.css">
+    <!-- Favicon y compatibilidad -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="canonical" href="https://nicolasabete.com.ar/pages/contacto.html">
+    
+    <!-- Datos estructurados (Schema.org) para SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contacta con Nicolás Abete",
+        "description": "Página de contacto para consultas, proyectos web y oportunidades laborales",
+        "url": "https://nicolasabete.com.ar/pages/contacto.html",
+        "mainEntity": {
+            "@type": "Person",
+            "name": "Nicolás Abete",
+            "jobTitle": "Desarrollador Web Full-Stack Junior",
+            "email": "nicolas.abete@hotmail.com",
+            "telephone": "+5402604206747",
+            "sameAs": [
+                "https://github.com/NicolasAbete",
+                "https://www.instagram.com/nicoabete_/"
+            ],
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "San Rafael",
+                "addressRegion": "Mendoza",
+                "addressCountry": "Argentina"
+            }
+        },
+        "potentialAction": {
+            "@type": "CommunicateAction",
+            "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "mailto:nicolas.abete@hotmail.com",
+                "inLanguage": "es",
+                "name": "Formulario de contacto"
+            },
+            "instrument": {
+                "@type": "WebForm"
+            }
+        }
+    }
+    </script>
 </head>
+
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <!-- Navbar mejorado con atributos ARIA -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" aria-label="Navegación principal">
         <div class="container">
-            <a class="navbar-brand" href="../index.html">DevPortfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="../index.html" aria-label="Inicio">
+                <span class="brand-text">MiPortfolio</span><span class="brand-highlight">Dev</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -33,110 +105,117 @@
                         <a class="nav-link" href="./cv.html">CV</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./contacto.html">Contáctame</a>
+                        <a class="nav-link active" href="./contacto.html" aria-current="page">Contáctame</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Page Header -->
-    <header class="contacto-page-header text-center">
-        <div class="contacto-circle contacto-circle-1"></div>
-        <div class="contacto-circle contacto-circle-2"></div>
-        <div class="contacto-circle contacto-circle-3"></div>
+    <!-- Page Header optimizado semánticamente -->
+    <header class="contacto-page-header text-center" aria-labelledby="contact-page-title">
+        <div class="contacto-circle contacto-circle-1" aria-hidden="true"></div>
+        <div class="contacto-circle contacto-circle-2" aria-hidden="true"></div>
+        <div class="contacto-circle contacto-circle-3" aria-hidden="true"></div>
         <div class="container">
-            <h1>Contáctame</h1>
-            <p>¿Tienes un proyecto en mente o una oportunidad laboral? Estoy disponible para nuevos desafíos.</p>
+            <h1 id="contact-page-title">Contáctame</h1>
+            <p>¿Tienes un proyecto en mente o una oportunidad laboral? Estoy disponible para nuevos desafíos y colaboraciones.</p>
         </div>
     </header>
 
-    <!-- Contact Section -->
-    <section class="contacto-section">
+    <!-- Contact Section con mejoras de accesibilidad -->
+    <section class="contacto-section" aria-labelledby="contact-info-heading">
         <div class="container">
             <div class="contacto-card">
                 <div class="row g-0">
                     <div class="col-lg-4">
                         <div class="contacto-info">
-                            <h3>Información de Contacto</h3>
-                            <div class="contacto-item">
-                                <div class="contacto-icon">
-                                    <i class="fas fa-map-marker-alt"></i>
+                            <h2 id="contact-info-heading" class="h3">Información de Contacto</h2>
+                            <address class="mb-0">
+                                <div class="contacto-item">
+                                    <div class="contacto-icon">
+                                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="contacto-text">
+                                        <h3 class="h4">Ubicación</h3>
+                                        <p>San Rafael, Mendoza, Argentina</p>
+                                    </div>
                                 </div>
-                                <div class="contacto-text">
-                                    <h4>Ubicación</h4>
-                                    <p>Tu Ciudad, País</p>
+                                <div class="contacto-item">
+                                    <div class="contacto-icon">
+                                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="contacto-text">
+                                        <h3 class="h4">Email</h3>
+                                        <p><a href="mailto:nicolas.abete@hotmail.com">nicolas.abete@hotmail.com</a></p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="contacto-item">
-                                <div class="contacto-icon">
-                                    <i class="fas fa-envelope"></i>
+                                <div class="contacto-item">
+                                    <div class="contacto-icon">
+                                        <i class="fas fa-phone" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="contacto-text">
+                                        <h3 class="h4">Teléfono</h3>
+                                        <p><a href="tel:+5402604206747">+54 0 260 4206747</a></p>
+                                    </div>
                                 </div>
-                                <div class="contacto-text">
-                                    <h4>Email</h4>
-                                    <p>tu@email.com</p>
+                                <div class="contacto-item">
+                                    <div class="contacto-icon">
+                                        <i class="fas fa-clock" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="contacto-text">
+                                        <h3 class="h4">Disponibilidad</h3>
+                                        <p>Lunes - Viernes: 9AM - 6PM (GMT-3)</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="contacto-item">
-                                <div class="contacto-icon">
-                                    <i class="fas fa-phone"></i>
-                                </div>
-                                <div class="contacto-text">
-                                    <h4>Teléfono</h4>
-                                    <p>+123 456 7890</p>
-                                </div>
-                            </div>
-                            <div class="contacto-item">
-                                <div class="contacto-icon">
-                                    <i class="fas fa-clock"></i>
-                                </div>
-                                <div class="contacto-text">
-                                    <h4>Disponibilidad</h4>
-                                    <p>Lunes - Viernes: 9AM - 6PM</p>
-                                </div>
-                            </div>
-                            <div class="contacto-social-links">
-                                <a href="#"><i class="fab fa-github"></i></a>
-                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-codepen"></i></a>
+                            </address>
+                            <div class="contacto-social-links" aria-label="Enlaces a redes sociales">
+                                <a href="https://github.com/NicolasAbete" target="_blank" rel="noopener" aria-label="GitHub">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://www.instagram.com/nicoabete_/" target="_blank" rel="noopener" aria-label="Instagram">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://wa.link/ya1z1n" target="_blank" rel="noopener" aria-label="WhatsApp">
+                                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-8">
                         <div class="contacto-form">
-                            <h3>Envíame un mensaje</h3>
-                            <form id="contactForm">
+                            <h2 id="contact-form-heading" class="h3">Envíame un mensaje</h2>
+                            <form id="contactForm" aria-labelledby="contact-form-heading">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="mb-3">
-                                            <label for="name" class="contacto-form-label">Nombre Completo</label>
-                                            <input type="text" class="form-control contacto-form-control" id="name" placeholder="Tu nombre" required>
+                                            <label for="name" class="contacto-form-label">Nombre Completo <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control contacto-form-control" id="name" placeholder="Tu nombre" required aria-required="true">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="mb-3">
-                                            <label for="email" class="contacto-form-label">Correo Electrónico</label>
-                                            <input type="email" class="form-control contacto-form-control" id="email" placeholder="tu@email.com" required>
+                                            <label for="email" class="contacto-form-label">Correo Electrónico <span class="text-danger">*</span></label>
+                                            <input type="email" class="form-control contacto-form-control" id="email" placeholder="tu@email.com" required aria-required="true">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="mb-3">
-                                    <label for="subject" class="contacto-form-label">Asunto</label>
-                                    <input type="text" class="form-control contacto-form-control" id="subject" placeholder="Asunto de tu mensaje" required>
+                                    <label for="subject" class="contacto-form-label">Asunto <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control contacto-form-control" id="subject" placeholder="Asunto de tu mensaje" required aria-required="true">
                                 </div>
                                 <div class="mb-3">
-                                    <label for="message" class="contacto-form-label">Mensaje</label>
-                                    <textarea class="form-control contacto-form-control" id="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                                    <label for="message" class="contacto-form-label">Mensaje <span class="text-danger">*</span></label>
+                                    <textarea class="form-control contacto-form-control" id="message" rows="5" placeholder="Escribe tu mensaje aquí..." required aria-required="true"></textarea>
                                 </div>
                                 <div class="form-check mb-4">
-                                    <input class="form-check-input" type="checkbox" id="privacyCheck" required>
+                                    <input class="form-check-input" type="checkbox" id="privacyCheck" required aria-required="true">
                                     <label class="form-check-label" for="privacyCheck">
-                                        Acepto la política de privacidad y el tratamiento de mis datos.
+                                        Acepto la <a href="#" aria-label="Leer política de privacidad">política de privacidad</a> y el tratamiento de mis datos.
                                     </label>
                                 </div>
                                 <button type="submit" class="btn contacto-btn-primary">
-                                    <i class="fas fa-paper-plane me-2"></i>Enviar Mensaje
+                                    <i class="fas fa-paper-plane me-2" aria-hidden="true"></i>Enviar Mensaje
                                 </button>
                             </form>
                         </div>
@@ -146,69 +225,76 @@
         </div>
     </section>
 
-    <!-- Map Section -->
-    <section class="contacto-map-section">
+    <!-- Map Section con optimización de rendimiento -->
+    <section class="contacto-map-section" aria-labelledby="location-map-heading">
         <div class="container">
+            <h2 id="location-map-heading" class="visually-hidden">Ubicación</h2>
             <div class="contacto-map-card">
-                <div class="contacto-map-placeholder d-flex flex-column align-items-center justify-content-center">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.5967903349042!2d-68.30703970121054!3d-34.62454806740236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9679a823c76dc0db%3A0xd2b7429c4584503f!2sRiobamba%2026%2C%20M5600%20San%20Rafael%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1743813529241!5m2!1ses-419!2sar" width="1116" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="contacto-map-placeholder">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1641.5967903349042!2d-68.30703970121054!3d-34.62454806740236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9679a823c76dc0db%3A0xd2b7429c4584503f!2sRiobamba%2026%2C%20M5600%20San%20Rafael%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1743813529241!5m2!1ses-419!2sar" 
+                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+                        title="Ubicación de Nicolás Abete en San Rafael, Mendoza, Argentina"></iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="contacto-faq-section">
+    <!-- FAQ Section con mejor estructura de microdata -->
+    <section class="contacto-faq-section" aria-labelledby="faq-heading">
         <div class="container">
-            <h2 class="contacto-section-title">Preguntas Frecuentes</h2>
+            <h2 id="faq-heading" class="contacto-section-title">Preguntas Frecuentes</h2>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <div class="accordion" id="faqAccordion">
-                        <div class="contacto-accordion-item accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="contacto-accordion-button accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                    <div class="accordion" id="faqAccordion" itemscope itemtype="https://schema.org/FAQPage">
+                        <div class="contacto-accordion-item accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <h3 class="accordion-header">
+                                <button class="contacto-accordion-button accordion-button" type="button" data-bs-toggle="collapse" 
+                                        data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1" itemprop="name">
                                     ¿Cuál es tu disponibilidad actual?
                                 </button>
-                            </h2>
-                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                <div class="accordion-body" itemprop="text">
                                     Actualmente estoy disponible para proyectos freelance y oportunidades laborales a tiempo completo. Mi disponibilidad horaria es flexible, lo que me permite adaptarme a diferentes zonas horarias y necesidades específicas del proyecto.
                                 </div>
                             </div>
                         </div>
-                        <div class="contacto-accordion-item accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="contacto-accordion-button accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                        <div class="contacto-accordion-item accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <h3 class="accordion-header">
+                                <button class="contacto-accordion-button accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                        data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2" itemprop="name">
                                     ¿Cómo es tu proceso de trabajo?
                                 </button>
-                            </h2>
-                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                <div class="accordion-body" itemprop="text">
                                     Mi proceso de trabajo comienza con una reunión inicial para entender tus necesidades y objetivos. Luego, desarrollo un plan de acción y cronograma. Mantengo comunicación constante durante todo el proyecto, con reuniones regulares para mostrar avances y recopilar feedback.
                                 </div>
                             </div>
                         </div>
-                        <div class="contacto-accordion-item accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="contacto-accordion-button accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                        <div class="contacto-accordion-item accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <h3 class="accordion-header">
+                                <button class="contacto-accordion-button accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                        data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3" itemprop="name">
                                     ¿Cuáles son tus tarifas?
                                 </button>
-                            </h2>
-                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                <div class="accordion-body" itemprop="text">
                                     Mis tarifas varían según el tipo y alcance del proyecto. Puedo trabajar por proyecto con un precio fijo acordado previamente o por hora, dependiendo de tus necesidades. Contáctame con los detalles de tu proyecto para recibir un presupuesto personalizado.
                                 </div>
                             </div>
                         </div>
-                        <div class="contacto-accordion-item accordion-item">
-                            <h2 class="accordion-header">
-                                <button class="contacto-accordion-button accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                        <div class="contacto-accordion-item accordion-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                            <h3 class="accordion-header">
+                                <button class="contacto-accordion-button accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                                        data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4" itemprop="name">
                                     ¿En qué tecnologías tienes experiencia?
                                 </button>
-                            </h2>
-                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                                <div class="accordion-body">
-                                    Tengo experiencia trabajando con HTML5, CSS3, JavaScript, Bootstrap, React.js en frontend. Para backend, manejo Node.js, Express y conocimientos básicos de bases de datos como MySQL y MongoDB. También estoy familiarizado con herramientas como Git, GitHub y metodologías de desarrollo ágil.
+                            </h3>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                                <div class="accordion-body" itemprop="text">
+                                    Tengo experiencia trabajando con HTML5, CSS3, JavaScript, Bootstrap, React.js en frontend. Para backend, manejo Node.js, Express y conocimientos de bases de datos como MySQL y MongoDB. También estoy familiarizado con herramientas como Git, GitHub y metodologías de desarrollo ágil.
                                 </div>
                             </div>
                         </div>
@@ -218,82 +304,295 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
+
+
+    <!-- Footer mejorado con mejor estructura y microformatos -->
+    <footer itemscope itemtype="https://schema.org/WPFooter">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-4 mb-md-0">
-                    <h5>DevPortfolio</h5>
-                    <p>Desarrollador web junior enfocado en crear experiencias digitales atractivas y funcionales.</p>
+                    <h5 class="brand-footer">Nicolás<span>Abete</span></h5>
+                    <p>Desarrollador web junior enfocado en crear <strong>experiencias digitales atractivas y funcionales</strong> que impulsen el éxito de tu negocio.</p>
                 </div>
                 <div class="col-md-2 mb-4 mb-md-0 footer-links">
                     <h5>Navegar</h5>
                     <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./proyectos.html">Proyectos</a></li>
-                        <li><a href="./sobreMi.html">Sobre Mí</a></li>
-                        <li><a href="./cv.html">CV</a></li>
-                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li><a href="../index.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Inicio</a></li>
+                        <li><a href="./proyectos.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Proyectos</a></li>
+                        <li><a href="./sobreMi.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Sobre Mí</a></li>
+                        <li><a href="./cv.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> CV</a></li>
+                        <li><a href="./contacto.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Contacto</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 mb-4 mb-md-0 footer-links">
                     <h5>Contacto</h5>
-                    <ul>
-                        <li><a href="mailto:nicolas.abete@hotmail.com"><i class="fas fa-envelope me-2"></i> nicolas.abete@hotmail.com</a></li>
-                        <li><a href="tel:+542604206747"><i class="fas fa-phone me-2"></i> +54 0 260 4206747</a></li>
-                        <li><a href="#"><i class="fas fa-map-marker-alt me-2"></i> San Rafael, Mendoza, Argentina</a></li>
+                    <ul itemscope itemtype="https://schema.org/Person">
+                        <meta itemprop="name" content="Nicolás Abete">
+                        <li><a href="mailto:nicolas.abete@hotmail.com" itemprop="email"><i class="fas fa-envelope me-2" aria-hidden="true"></i> nicolas.abete@hotmail.com</a></li>
+                        <li><a href="tel:+5402604206747" itemprop="telephone"><i class="fas fa-phone me-2" aria-hidden="true"></i> +54 0 260 4206747</a></li>
+                        <li itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                            <i class="fas fa-map-marker-alt me-2" aria-hidden="true"></i>
+                            <span itemprop="addressLocality">San Rafael</span>,
+                            <span itemprop="addressRegion">Mendoza</span>,
+                            <span itemprop="addressCountry">Argentina</span>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-md-3 footer-links">
                     <h5>Social</h5>
                     <ul>
-                        <li><a href="https://github.com/NicolasAbete" target="_blank"><i class="fab fa-github me-2"></i> GitHub</a></li>
-                        <li><a href="https://www.instagram.com/nicoabete_/" target="_blank"><i class="fab fa-instagram me-2"></i> Instagram</a></li>
-                        <li><a href="https://wa.link/ya1z1n" target="_blank"><i class="fab fa-whatsapp me-2"></i> WhatsApp</a></li>
+                        <li><a href="https://github.com/NicolasAbete" target="_blank" rel="noopener"><i class="fab fa-github me-2" aria-hidden="true"></i> GitHub</a></li>
+                        <li><a href="https://www.instagram.com/nicoabete_/" target="_blank" rel="noopener"><i class="fab fa-instagram me-2" aria-hidden="true"></i> Instagram</a></li>
+                        <li><a href="https://wa.link/ya1z1n" target="_blank" rel="noopener"><i class="fab fa-whatsapp me-2" aria-hidden="true"></i> WhatsApp</a></li>
                     </ul>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 DevPortfolio. Todos los derechos reservados.</p>
+                <p>&copy; <span id="current-year">2025</span> Nicolás Abete. Todos los derechos reservados.</p>
+                <div class="scroll-top">
+                    <a href="#" id="scroll-to-top" aria-label="Volver arriba"><i class="fas fa-arrow-up" aria-hidden="true"></i></a>
+                </div>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Bundle with Popper optimizado con carga diferida -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" defer></script>
+    
+    <!-- JavaScript principal optimizado -->
     <script>
-        // Form validation and submission
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
+
+        // Carga diferida de scripts
+    document.addEventListener('DOMContentLoaded', function() {
+    // Validación y envío del formulario
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(event) {
             event.preventDefault();
             
-            // Simple form validation
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
+            // Validación detallada del formulario
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const subject = document.getElementById('subject').value.trim();
+            const message = document.getElementById('message').value.trim();
+            const privacyCheck = document.getElementById('privacyCheck').checked;
             
-            if (name && email && subject && message) {
-                // Here you would normally send the form data to a server
-                alert('¡Mensaje enviado correctamente! Te responderé lo antes posible.');
-                this.reset();
-            } else {
-                alert('Por favor completa todos los campos requeridos.');
+            let isValid = true;
+            let errorMessage = '';
+            
+            // Validar nombre
+            if (!name) {
+                isValid = false;
+                errorMessage = 'Por favor ingresa tu nombre completo.';
             }
+            
+            // Validar email con expresión regular
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email || !emailRegex.test(email)) {
+                isValid = false;
+                errorMessage = errorMessage || 'Por favor ingresa un correo electrónico válido.';
+            }
+            
+            // Validar asunto
+            if (!subject) {
+                isValid = false;
+                errorMessage = errorMessage || 'Por favor ingresa el asunto de tu mensaje.';
+            }
+            
+            // Validar mensaje
+            if (!message) {
+                isValid = false;
+                errorMessage = errorMessage || 'Por favor escribe tu mensaje.';
+            }
+            
+            // Validar política de privacidad
+            if (!privacyCheck) {
+                isValid = false;
+                errorMessage = errorMessage || 'Debes aceptar la política de privacidad.';
+            }
+            
+            if (isValid) {
+                // Aquí normalmente enviarías los datos a un servidor
+                // Simular envío exitoso con un mensaje
+                const submitButton = contactForm.querySelector('button[type="submit"]');
+                const originalText = submitButton.innerHTML;
+                
+                // Cambiar texto del botón e inhabilitar
+                submitButton.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Enviando...';
+                submitButton.disabled = true;
+                
+                // Simular demora de envío
+                setTimeout(function() {
+                    // Mostrar mensaje de éxito
+                    alert('¡Mensaje enviado correctamente! Te responderé lo antes posible.');
+                    
+                    // Restablecer formulario y botón
+                    contactForm.reset();
+                    submitButton.innerHTML = originalText;
+                    submitButton.disabled = false;
+                    
+                    // Opcional: seguimiento de conversión (se implementaría con un servicio real)
+                    if (typeof gtag === 'function') {
+                        gtag('event', 'form_submission', {
+                            'event_category': 'Contact',
+                            'event_label': 'Contact Form'
+                        });
+                    }
+                }, 1500);
+            } else {
+                // Mostrar mensaje de error
+                alert(errorMessage);
+            }
+        });
+    }
+    
+    // Efecto navbar al hacer scroll - optimizado
+    const navbar = document.querySelector('.navbar');
+    const handleScroll = () => {
+        if (window.scrollY > 50) {
+            navbar.classList.add('navbar-scrolled');
+        } else {
+            navbar.classList.remove('navbar-scrolled');
+        }
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll(); // Aplicar estado inicial
+    
+    // Funcionalidad de scroll hacia arriba
+    const scrollToTop = document.getElementById('scroll-to-top');
+    if (scrollToTop) {
+        scrollToTop.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+    
+    // Actualizar año en el copyright
+    const yearElement = document.getElementById('current-year');
+    if (yearElement) {
+        yearElement.textContent = new Date().getFullYear();
+    }
+    
+    // Añadir atributos de accesibilidad a elementos dinámicos
+    document.querySelectorAll('a[href^="tel:"]').forEach(link => {
+        link.setAttribute('aria-label', 'Llamar al teléfono');
+    });
+    
+    document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+        link.setAttribute('aria-label', 'Enviar email');
+    });
+    
+    // Mejorar el rendimiento de interacción con los elementos del formulario
+    const formInputs = document.querySelectorAll('.contacto-form-control');
+    formInputs.forEach(input => {
+        // Añadir clases de estado para mejorar feedback visual
+        input.addEventListener('focus', function() {
+            this.parentElement.classList.add('input-focused');
         });
         
-        // Navbar scroll effect
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.style.padding = '10px 0';
-                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
-                navbar.style.boxShadow = '0 4px 10px -1px rgba(0, 0, 0, 0.1)';
+        input.addEventListener('blur', function() {
+            this.parentElement.classList.remove('input-focused');
+            if (this.value.trim()) {
+                this.classList.add('is-valid');
             } else {
-                navbar.style.padding = '20px 0';
-                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
-                navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+                this.classList.remove('is-valid');
             }
         });
-    </script>
+
+        // Validación en tiempo real para mejorar UX
+        input.addEventListener('input', function() {
+            if (input.type === 'email') {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (emailRegex.test(input.value.trim())) {
+                    input.classList.add('is-valid');
+                    input.classList.remove('is-invalid');
+                } else {
+                    input.classList.remove('is-valid');
+                    if (input.value.trim()) {
+                        input.classList.add('is-invalid');
+                    } else {
+                        input.classList.remove('is-invalid');
+                    }
+                }
+            }
+        });
+    });
+    
+    // Implementar lazy loading para la sección del mapa
+    const mapObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const iframe = entry.target.querySelector('iframe');
+                if (iframe && iframe.dataset.src) {
+                    iframe.src = iframe.dataset.src;
+                    iframe.removeAttribute('data-src');
+                }
+                mapObserver.unobserve(entry.target);
+            }
+        });
+    }, { rootMargin: '200px' });
+    
+    const mapSection = document.querySelector('.contacto-map-placeholder');
+    if (mapSection) {
+        mapObserver.observe(mapSection);
+    }
+    
+    // Añadir efecto de animación al formulario para mejorar UX
+    const animateElements = document.querySelectorAll('.contacto-info, .contacto-form');
+    animateElements.forEach(element => {
+        element.classList.add('animate-on-scroll');
+    });
+    
+    // Optimización para dispositivos táctiles
+    if ('ontouchstart' in window) {
+        document.body.classList.add('touch-device');
+        
+        // Mejorar interacción en dispositivos táctiles para botones
+        const touchButtons = document.querySelectorAll('.btn, .nav-link, .contacto-social-links a');
+        touchButtons.forEach(button => {
+            button.addEventListener('touchstart', function() {
+                this.classList.add('touch-active');
+            }, { passive: true });
+            
+            button.addEventListener('touchend', function() {
+                this.classList.remove('touch-active');
+            }, { passive: true });
+        });
+    }
+    
+    // Trackear eventos para analíticas (se implementaría con un servicio real)
+    const trackableElements = document.querySelectorAll('.contacto-social-links a, .cta-buttons a');
+    trackableElements.forEach(element => {
+        element.addEventListener('click', function() {
+            const label = this.textContent.trim() || this.getAttribute('aria-label');
+            if (typeof gtag === 'function') {
+                gtag('event', 'click', {
+                    'event_category': 'Contact',
+                    'event_label': label
+                });
+            }
+        });
+    });
+    
+    // Mejorar accesibilidad para el acordeón FAQ
+    const faqButtons = document.querySelectorAll('.contacto-accordion-button');
+    faqButtons.forEach(button => {
+        button.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                this.click();
+            }
+        });
+    });
+    
+    // Detectar si JavaScript está habilitado y añadir clase al body
+    document.body.classList.add('js-enabled');
+    
+    console.log('Página de contacto inicializada correctamente');
+});
+</script>
 </body>
 </html>
