@@ -1224,9 +1224,8 @@ textarea.contacto-form-control {
     transform: translateX(-50%);
   }
 }
-
 .sobreMi-img {
-    width: 30%;
+  width: 30%;
 }
 
 .about-section {
@@ -1410,6 +1409,9 @@ textarea.contacto-form-control {
   .about-content h2:after {
     left: 50%;
     transform: translateX(-50%);
+  }
+  .sobreMi-img {
+    width: 100%;
   }
 }
 .projects-showcase {
