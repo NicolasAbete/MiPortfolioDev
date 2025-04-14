@@ -3,34 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio profesional de Nicolas Abete - Desarrollador Web Junior especializado en crear experiencias web atractivas y funcionales">
-    <title>Nicolás Abete | Desarrollador Web</title>
+    
+    <!-- Meta tags SEO mejorados -->
+    <meta name="description" content="Portfolio profesional de Nicolás Abete - Desarrollador Web Full-Stack Junior especializado en HTML, CSS, JavaScript, React y Node.js. Proyectos web creativos y funcionales en San Rafael, Mendoza.">
+    <meta name="keywords" content="Desarrollador web, frontend, backend, full-stack, HTML5, CSS3, JavaScript, React, Node.js, San Rafael, Mendoza, portfolio, Nicolás Abete">
+    <meta name="author" content="Nicolás Abete">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Nicolás Abete | Desarrollador Web Full-Stack Junior">
+    <meta property="og:description" content="Portfolio profesional de Nicolás Abete - Desarrollador Web Full-Stack Junior especializado en crear experiencias web atractivas y funcionales">
+    <meta property="og:image" content="./img/img-code.png">
+    <meta property="og:url" content="https://nicolasabete.com.ar">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nicolás Abete | Desarrollador Web Full-Stack Junior">
+    <meta name="twitter:description" content="Portfolio profesional de Nicolás Abete - Desarrollador Web Full-Stack Junior en San Rafael, Mendoza">
+    
+    <title>Nicolás Abete | Desarrollador Web Full-Stack Junior en San Rafael</title>
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
+    <!-- Google Fonts - Preload para optimizar -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- CSS principal -->
+    <!-- CSS principal con atributo preload -->
+    <link rel="preload" href="./estilos/style.css" as="style">
     <link rel="stylesheet" href="./estilos/style.css">
-    <!-- Favicon -->
+    <!-- Favicon y compatibilidad -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="canonical" href="https://nicolasabete.com.ar">
+    
+    <!-- Datos estructurados (Schema.org) para SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Nicolás Abete",
+        "url": "https://nicolasabete.com.ar",
+        "jobTitle": "Desarrollador Web Full-Stack Junior",
+        "sameAs": [
+        "https://github.com/NicolasAbete",
+        "https://www.instagram.com/nicoabete_/"
+        ],
+        "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "San Rafael",
+        "addressRegion": "Mendoza",
+        "addressCountry": "Argentina"
+        },
+        "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+54-0-260-4206747",
+        "email": "nicolas.abete@hotmail.com",
+        "contactType": "Professional"
+        },
+        "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance"
+        }
+    }
+    </script>
 </head>
 
 <body>
-    <!-- Navbar mejorado con efecto de glassmorphism -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <!-- Navbar mejorado con efecto de glassmorphism y atributos ARIA -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" aria-label="Navegación principal">
         <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <span class="brand-text">Nicolás</span><span class="brand-highlight">Abete</span>
+            <a class="navbar-brand" href="index.html" aria-label="Inicio">
+                <span class="brand-text">MiPortfolio</span><span class="brand-highlight">Dev</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="./index.html">Inicio</a>
+                        <a class="nav-link active" href="./index.html" aria-current="page">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./pages/proyectos.html">Proyectos</a>
@@ -49,10 +101,10 @@
         </div>
     </nav>
 
-    <!-- Hero Section mejorado con animaciones y efectos visuales -->
-    <section class="hero" id="inicio">
+    <!-- Hero Section mejorado con animaciones, efectos visuales y heading H1 optimizado -->
+    <section class="hero" id="inicio" aria-label="Presentación personal">
         <!-- Efecto de burbujas animadas en el fondo -->
-        <ul class="bg-animation">
+        <ul class="bg-animation" aria-hidden="true">
             <li></li>
             <li></li>
             <li></li>
@@ -70,34 +122,34 @@
                     <div class="badge-container">
                         <span class="availability-badge">Disponible para proyectos</span>
                     </div>
-                    <h1>Transformo ideas en <span class="gradient-text typed-text"></span></h1>
-                    <p class="hero-text">Soy un <strong>desarrollador web full-stack junior</strong> apasionado por crear experiencias digitales que combinen <strong>diseño atractivo con funcionalidad excepcional</strong>.</p>
+                    <h1>Nicolás Abete: Desarrollador Web Full-Stack que transforma ideas en <span class="gradient-text typed-text"></span></h1>
+                    <p class="hero-text">Soy un <strong>desarrollador web full-stack junior</strong> de Argentina, apasionado por crear experiencias digitales que combinen <strong>diseño atractivo con funcionalidad excepcional</strong>.</p>
                     <div class="d-flex flex-wrap hero-buttons">
                         <a href="./pages/proyectos.html" class="btn btn-primary">
-                            <i class="fas fa-code me-2"></i>Ver Proyectos
+                            <i class="fas fa-code me-2" aria-hidden="true"></i>Ver Proyectos
                         </a>
                         <a href="./pages/contacto.html" class="btn btn-outline">
-                            <i class="fas fa-paper-plane me-2"></i>Contáctame
+                            <i class="fas fa-paper-plane me-2" aria-hidden="true"></i>Contáctame
                         </a>
                     </div>
                     <div class="tech-stack">
                         <span>Tecnologías:</span>
                         <div class="tech-icons">
-                            <i class="fab fa-html5" title="HTML5"></i>
-                            <i class="fab fa-css3-alt" title="CSS3"></i>
-                            <i class="fab fa-js" title="JavaScript"></i>
-                            <i class="fab fa-react" title="React"></i>
-                            <i class="fab fa-node-js" title="Node.js"></i>
+                            <i class="fab fa-html5" title="HTML5" aria-label="HTML5"></i>
+                            <i class="fab fa-css3-alt" title="CSS3" aria-label="CSS3"></i>
+                            <i class="fab fa-js" title="JavaScript" aria-label="JavaScript"></i>
+                            <i class="fab fa-react" title="React" aria-label="React"></i>
+                            <i class="fab fa-node-js" title="Node.js" aria-label="Node.js"></i>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="hero-image">
-                        <img src="./img/img-code.png" alt="Ilustración de desarrollo web" class="img-fluid">
+                        <img src="./img/img-code.png" alt="Ilustración de desarrollo web - código y diseño" class="img-fluid" width="600" height="400">
                         <!-- Elementos decorativos -->
-                        <div class="floating-element html-tag"><i class="fab fa-html5"></i></div>
-                        <div class="floating-element css-tag"><i class="fab fa-css3-alt"></i></div>
-                        <div class="floating-element js-tag"><i class="fab fa-js"></i></div>
+                        <div class="floating-element html-tag" aria-hidden="true"><i class="fab fa-html5"></i></div>
+                        <div class="floating-element css-tag" aria-hidden="true"><i class="fab fa-css3-alt"></i></div>
+                        <div class="floating-element js-tag" aria-hidden="true"><i class="fab fa-js"></i></div>
                     </div>
                 </div>
             </div>
@@ -105,18 +157,18 @@
     </section>
 
     <!-- Skills Section mejorado con indicadores de niveles y animaciones -->
-    <section class="skills" id="habilidades">
+    <section class="skills" id="habilidades" aria-labelledby="skills-heading">
         <div class="container">
             <div class="section-header">
                 <span class="section-badge">HABILIDADES</span>
-                <h2 class="section-title">Mis <span class="highlight-text">Fortalezas</span> Técnicas</h2>
+                <h2 class="section-title" id="skills-heading">Mis <span class="highlight-text">Fortalezas</span> Técnicas</h2>
                 <p class="section-subtitle">Combinando estas habilidades para crear soluciones web completas y atractivas</p>
             </div>
             <div class="row mt-5">
                 <div class="col-md-6 col-lg-3 mb-4">
                     <div class="skill-card" data-aos="fade-up">
                         <div class="skill-icon frontend">
-                            <i class="fas fa-code"></i>
+                            <i class="fas fa-code" aria-hidden="true"></i>
                         </div>
                         <h3>Frontend</h3>
                         <p>Creo interfaces <strong>intuitivas y atractivas</strong> utilizando HTML5, CSS3, Sass, JavaScript, React.js y Bootstrap.</p>
@@ -125,7 +177,7 @@
                 <div class="col-md-6 col-lg-3 mb-4">
                     <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="skill-icon backend">
-                            <i class="fas fa-server"></i>
+                            <i class="fas fa-server" aria-hidden="true"></i>
                         </div>
                         <h3>Backend</h3>
                         <p>Desarrollo con Node.js, Express y bases de datos como <strong>MySQL y MongoDB</strong> para crear aplicaciones robustas.</p>
@@ -134,7 +186,7 @@
                 <div class="col-md-6 col-lg-3 mb-4">
                     <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
                         <div class="skill-icon tools">
-                            <i class="fas fa-tools"></i>
+                            <i class="fas fa-tools" aria-hidden="true"></i>
                         </div>
                         <h3>Herramientas</h3>
                         <p>Dominio de Git, GitHub, Figma y <strong>herramientas modernas</strong> para optimizar el flujo de trabajo.</p>
@@ -143,7 +195,7 @@
                 <div class="col-md-6 col-lg-3 mb-4">
                     <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
                         <div class="skill-icon design">
-                            <i class="fas fa-paint-brush"></i>
+                            <i class="fas fa-paint-brush" aria-hidden="true"></i>
                         </div>
                         <h3>Diseño</h3>
                         <p>Aplicación de principios de UI/UX, <strong>diseño responsivo</strong> y accesibilidad para crear productos inclusivos.</p>
@@ -153,12 +205,12 @@
         </div>
     </section>
 
-    <!-- Projects Preview mejorado con mejor presentación y efectos hover -->
-    <section class="projects-preview" id="proyectos">
+    <!-- Projects Preview mejorado con mejor presentación, efectos hover y atributos SEO -->
+    <section class="projects-preview" id="proyectos" aria-labelledby="projects-heading">
         <div class="container">
             <div class="section-header">
                 <span class="section-badge">PORTAFOLIO</span>
-                <h2 class="section-title">Proyectos <span class="highlight-text">Destacados</span></h2>
+                <h2 class="section-title" id="projects-heading">Proyectos <span class="highlight-text">Destacados</span></h2>
                 <p class="section-subtitle">Soluciones creativas para problemas reales</p>
             </div>
             <div class="row mt-5">
@@ -167,11 +219,11 @@
                     <div class="project-card" data-aos="fade-up">
                         <div class="project-image" style="background-color: #dbeafe;">
                             <div class="project-icon">
-                                <i class="fas fa-shopping-cart"></i>
+                                <i class="fas fa-shopping-cart" aria-hidden="true"></i>
                             </div>
                             <div class="project-overlay">
-                                <a href="https://github.com/CodeSystem2022/Grupo-Omega-4to-semestre" target="_blank" class="overlay-link">
-                                    <i class="fas fa-external-link-alt"></i>
+                                <a href="https://github.com/CodeSystem2022/Grupo-Omega-4to-semestre" target="_blank" rel="noopener" class="overlay-link" aria-label="Ver proyecto E-commerce Omega">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
@@ -187,8 +239,8 @@
                                 <span class="project-tag tag-js">JavaScript</span>
                                 <span class="project-tag tag-sql">SQL</span>
                             </div>
-                            <a href="https://github.com/CodeSystem2022/Grupo-Omega-4to-semestre" target="_blank" class="btn btn-primary mt-3">
-                                <i class="fab fa-github me-2"></i>Ver Código
+                            <a href="https://github.com/CodeSystem2022/Grupo-Omega-4to-semestre" target="_blank" rel="noopener" class="btn btn-primary mt-3">
+                                <i class="fab fa-github me-2" aria-hidden="true"></i>Ver Código
                             </a>
                         </div>
                     </div>
@@ -197,10 +249,10 @@
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="project-card" data-aos="fade-up" data-aos-delay="100">
                         <div class="project-image" style="background-color: #ecfdf5;">
-                            <img src="./img/old-portfolio.png" alt="Imagen de mi primer portfolio" class="project-thumbnail">
+                            <img src="./img/old-portfolio.png" alt="Captura de pantalla de mi primer portfolio web" class="project-thumbnail" width="400" height="300">
                             <div class="project-overlay">
-                                <a href="https://github.com/NicolasAbete/Proyecto-Pagina-Web-Portfolio" target="_blank" class="overlay-link">
-                                    <i class="fas fa-external-link-alt"></i>
+                                <a href="https://github.com/NicolasAbete/Proyecto-Pagina-Web-Portfolio" target="_blank" rel="noopener" class="overlay-link" aria-label="Ver proyecto Mi Primer Portfolio">
+                                    <i class="fas fa-external-link-alt" aria-hidden="true"></i>
                                 </a>
                             </div>
                         </div>
@@ -216,8 +268,8 @@
                                 <span class="project-tag tag-js">JavaScript</span>
                                 <span class="project-tag tag-sass">SASS</span>
                             </div>
-                            <a href="https://github.com/NicolasAbete/Proyecto-Pagina-Web-Portfolio" target="_blank" class="btn btn-primary mt-3">
-                                <i class="fab fa-github me-2"></i>Ver Código
+                            <a href="https://github.com/NicolasAbete/Proyecto-Pagina-Web-Portfolio" target="_blank" rel="noopener" class="btn btn-primary mt-3">
+                                <i class="fab fa-github me-2" aria-hidden="true"></i>Ver Código
                             </a>
                         </div>
                     </div>
@@ -228,7 +280,7 @@
                         <div class="featured-badge">Destacado</div>
                         <div class="project-image" style="background-color: #f0f9ff;">
                             <div class="project-icon">
-                                <i class="fas fa-laptop-code"></i>
+                                <i class="fas fa-laptop-code" aria-hidden="true"></i>
                             </div>
                             <div class="project-overlay">
                                 <span class="overlay-text">¡Tu proyecto aquí!</span>
@@ -246,7 +298,7 @@
                                 <span class="project-tag tag-js">Aquí</span>
                             </div>
                             <a href="./pages/contacto.html" class="btn btn-primary mt-3 pulse-btn">
-                                <i class="fas fa-handshake me-2"></i>Colaboremos
+                                <i class="fas fa-handshake me-2" aria-hidden="true"></i>Colaboremos
                             </a>
                         </div>
                     </div>
@@ -254,24 +306,24 @@
             </div>
             <div class="text-center mt-5">
                 <a href="./pages/proyectos.html" class="btn btn-outline btn-lg">
-                    <i class="fas fa-th-large me-2"></i>Ver todos los proyectos
+                    <i class="fas fa-th-large me-2" aria-hidden="true"></i>Ver todos los proyectos
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Nueva sección: Testimonios -->
-    <section class="testimonials">
+    <!-- Testimonios con mejoras semánticas y atributos SEO -->
+    <section class="testimonials" aria-labelledby="testimonials-heading">
         <div class="container">
             <div class="section-header">
                 <span class="section-badge">RECOMENDACIONES</span>
-                <h2 class="section-title">Lo que <span class="highlight-text">Dicen</span> de Mí</h2>
+                <h2 class="section-title" id="testimonials-heading">Lo que <span class="highlight-text">Dicen</span> de Mí</h2>
                 <p class="section-subtitle">Valoraciones de clientes y compañeros</p>
             </div>
             <div class="testimonial-slider">
                 <div class="testimonial-card">
                     <div class="testimonial-content">
-                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <div class="quote-icon" aria-hidden="true"><i class="fas fa-quote-left"></i></div>
                         <p>"Nicolás demostró gran <strong>profesionalismo y creatividad</strong>. Entregó nuestro proyecto antes del plazo y superó todas nuestras expectativas."</p>
                     </div>
                     <div class="testimonial-author">
@@ -286,7 +338,7 @@
                 </div>
                 <div class="testimonial-card">
                     <div class="testimonial-content">
-                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <div class="quote-icon" aria-hidden="true"><i class="fas fa-quote-left"></i></div>
                         <p>"Trabajar con Nicolás fue una gran experiencia. Sus <strong>habilidades técnicas</strong> y su atención al detalle hicieron que nuestro proyecto fuera un éxito."</p>
                     </div>
                     <div class="testimonial-author">
@@ -303,26 +355,26 @@
         </div>
     </section>
 
-    <!-- Contact Preview mejorado con más llamados a la acción -->
-    <section class="contact-preview" id="contacto">
+    <!-- Contact Preview mejorado con más llamados a la acción y atributos semánticos -->
+    <section class="contact-preview" id="contacto" aria-labelledby="contact-heading">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
                     <span class="contact-badge">¡COLABOREMOS!</span>
-                    <h2>¿Listo para <span class="highlight-text-light">impulsar</span> tu próximo proyecto?</h2>
+                    <h2 id="contact-heading">¿Listo para <span class="highlight-text-light">impulsar</span> tu próximo proyecto?</h2>
                     <p class="mb-4">Estoy <strong>disponible para nuevas oportunidades laborales</strong> y ansioso por colaborar en proyectos desafiantes. ¡Hablemos sobre cómo puedo ayudarte!</p>
                     <a href="./pages/contacto.html" class="btn btn-light btn-lg">
-                        <i class="fas fa-paper-plane me-2"></i>Envíame un mensaje
+                        <i class="fas fa-paper-plane me-2" aria-hidden="true"></i>Envíame un mensaje
                     </a>
                     <div class="social-links">
-                        <a href="https://github.com/NicolasAbete" target="_blank" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
+                        <a href="https://github.com/NicolasAbete" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i>
                         </a>
-                        <a href="https://www.instagram.com/nicoabete_/" target="_blank" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
+                        <a href="https://www.instagram.com/nicoabete_/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
                         </a>
-                        <a href="https://wa.link/ya1z1n" target="_blank" aria-label="WhatsApp">
-                            <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.link/ya1z1n" target="_blank" rel="noopener" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
@@ -330,7 +382,7 @@
         </div>
     </section>
 
-    <!-- Footer mejorado con mejor estructura y accesibilidad -->
+    <!-- Footer mejorado con mejor estructura, accesibilidad y microdatos -->
     <footer>
         <div class="container">
             <div class="row">
@@ -341,47 +393,47 @@
                 <div class="col-md-2 mb-4 mb-md-0 footer-links">
                     <h5>Navegar</h5>
                     <ul>
-                        <li><a href="./index.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
-                        <li><a href="./pages/proyectos.html"><i class="fas fa-chevron-right"></i> Proyectos</a></li>
-                        <li><a href="./pages/sobreMi.html"><i class="fas fa-chevron-right"></i> Sobre Mí</a></li>
-                        <li><a href="./pages/cv.html"><i class="fas fa-chevron-right"></i> CV</a></li>
-                        <li><a href="./pages/contacto.html"><i class="fas fa-chevron-right"></i> Contacto</a></li>
+                        <li><a href="./index.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Inicio</a></li>
+                        <li><a href="./pages/proyectos.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Proyectos</a></li>
+                        <li><a href="./pages/sobreMi.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Sobre Mí</a></li>
+                        <li><a href="./pages/cv.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> CV</a></li>
+                        <li><a href="./pages/contacto.html"><i class="fas fa-chevron-right" aria-hidden="true"></i> Contacto</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3 mb-4 mb-md-0 footer-links">
                     <h5>Contacto</h5>
                     <ul>
-                        <li><a href="mailto:nicolas.abete@hotmail.com"><i class="fas fa-envelope me-2"></i> nicolas.abete@hotmail.com</a></li>
-                        <li><a href="tel:+5402604206747"><i class="fas fa-phone me-2"></i> +54 0 260 4206747</a></li>
-                        <li><address><i class="fas fa-map-marker-alt me-2"></i> San Rafael, Mendoza, Argentina</address></li>
+                        <li><a href="mailto:nicolas.abete@hotmail.com"><i class="fas fa-envelope me-2" aria-hidden="true"></i> nicolas.abete@hotmail.com</a></li>
+                        <li><a href="tel:+5402604206747"><i class="fas fa-phone me-2" aria-hidden="true"></i> +54 0 260 4206747</a></li>
+                        <li><address><i class="fas fa-map-marker-alt me-2" aria-hidden="true"></i> San Rafael, Mendoza, Argentina</address></li>
                     </ul>
                 </div>
                 <div class="col-md-3 footer-links">
                     <h5>Social</h5>
                     <ul>
-                        <li><a href="https://github.com/NicolasAbete" target="_blank"><i class="fab fa-github me-2"></i> GitHub</a></li>
-                        <li><a href="https://www.instagram.com/nicoabete_/" target="_blank"><i class="fab fa-instagram me-2"></i> Instagram</a></li>
-                        <li><a href="https://wa.link/ya1z1n" target="_blank"><i class="fab fa-whatsapp me-2"></i> WhatsApp</a></li>
+                        <li><a href="https://github.com/NicolasAbete" target="_blank" rel="noopener"><i class="fab fa-github me-2" aria-hidden="true"></i> GitHub</a></li>
+                        <li><a href="https://www.instagram.com/nicoabete_/" target="_blank" rel="noopener"><i class="fab fa-instagram me-2" aria-hidden="true"></i> Instagram</a></li>
+                        <li><a href="https://wa.link/ya1z1n" target="_blank" rel="noopener"><i class="fab fa-whatsapp me-2" aria-hidden="true"></i> WhatsApp</a></li>
                     </ul>
                 </div>
             </div>
             <div class="copyright">
                 <p>&copy; 2025 Nicolás Abete. Todos los derechos reservados.</p>
                 <div class="scroll-top">
-                    <a href="#inicio" aria-label="Volver arriba"><i class="fas fa-arrow-up"></i></a>
+                    <a href="#inicio" aria-label="Volver arriba"><i class="fas fa-arrow-up" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
     </footer>
 
     <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" defer></script>
     <!-- Typed.js para animación de texto -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" defer></script>
     
-    <!-- JavaScript principal -->
+    <!-- JavaScript principal optimizado -->
     <script>
-        // Activar animación de texto con Typed.js
+        // Carga diferida de scripts
         document.addEventListener('DOMContentLoaded', function() {
             // Inicializar Typed.js
             const typed = new Typed('.typed-text', {
@@ -392,17 +444,17 @@
                 loop: true
             });
             
-            // Efecto navbar al hacer scroll
+            // Efecto navbar al hacer scroll - optimizado
+            const navbar = document.querySelector('.navbar');
             window.addEventListener('scroll', function() {
-                const navbar = document.querySelector('.navbar');
                 if (window.scrollY > 50) {
                     navbar.classList.add('navbar-scrolled');
                 } else {
                     navbar.classList.remove('navbar-scrolled');
                 }
-            });
+            }, { passive: true });
             
-            // Scroll suave para los enlaces internos
+            // Scroll suave para los enlaces internos - optimizado para rendimiento
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
                     e.preventDefault();
@@ -420,23 +472,45 @@
                 });
             });
             
-            // Simple control de slider para testimonios
+            // Control de slider para testimonios - optimizado
             const testimonialCards = document.querySelectorAll('.testimonial-card');
-            let currentTestimonial = 0;
             
-            // Solo inicializar si hay testimonios en la página
             if(testimonialCards.length > 1) {
+                let currentTestimonial = 0;
+                
                 // Ocultar todos menos el primero
                 testimonialCards.forEach((card, index) => {
                     if(index !== 0) card.style.display = 'none';
                 });
                 
-                // Cambiar testimonio cada 5 segundos
-                setInterval(() => {
+                // Cambiar testimonio cada 5 segundos con mejor rendimiento
+                const rotateTestimonials = () => {
                     testimonialCards[currentTestimonial].style.display = 'none';
                     currentTestimonial = (currentTestimonial + 1) % testimonialCards.length;
                     testimonialCards[currentTestimonial].style.display = 'block';
-                }, 5000);
+                };
+                
+                setInterval(rotateTestimonials, 5000);
+            }
+            
+            // Añadir lazy loading a imágenes que están fuera de la vista inicial
+            const lazyImages = document.querySelectorAll('img.project-thumbnail');
+            if ('IntersectionObserver' in window) {
+                const imageObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const image = entry.target;
+                            image.src = image.dataset.src;
+                            imageObserver.unobserve(image);
+                        }
+                    });
+                });
+                
+                lazyImages.forEach(img => {
+                    img.dataset.src = img.src;
+                    img.src = 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
+                    imageObserver.observe(img);
+                });
             }
         });
     </script>
