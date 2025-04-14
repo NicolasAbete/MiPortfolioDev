@@ -3,20 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Web Junior | Proyectos</title>
-    <!-- Bootstrap CSS -->
+    
+    <!-- Meta tags SEO mejorados -->
+    <meta name="description" content="Explora los proyectos de desarrollo web de Nicolás Abete, incluyendo aplicaciones frontend, backend y diseños UI/UX. Portfolio de un desarrollador web full-stack junior de San Rafael, Mendoza.">
+    <meta name="keywords" content="proyectos web, portfolio desarrollador, frontend, backend, desarrollo web, HTML5, CSS3, JavaScript, San Rafael, Mendoza, Nicolás Abete">
+    <meta name="author" content="Nicolás Abete">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Proyectos de Desarrollo Web | Nicolás Abete | Portfolio">
+    <meta property="og:description" content="Explora los proyectos de desarrollo web de Nicolás Abete, especializados en frontend, backend y diseño UI/UX responsive. Portfolio profesional en San Rafael, Mendoza.">
+    <meta property="og:image" content="../img/old-portfolio.png">
+    <meta property="og:url" content="https://nicolasabete.com.ar/pages/proyectos.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Proyectos de Desarrollo Web | Nicolás Abete | Portfolio">
+    <meta name="twitter:description" content="Colección de proyectos web profesionales que reflejan mis habilidades como desarrollador full-stack">
+    
+    <title>Portfolio Web | Proyectos de Desarrollo Full-Stack de Nicolás Abete</title>
+    
+    <!-- Bootstrap CSS con preload -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" as="style">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
+    
+    <!-- Font Awesome con preload -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts - Preload para optimizar -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS principal con atributo preload -->
+    <link rel="preload" href="../estilos/style.css" as="style">
     <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="preload" href="./proyectos.css" as="style">
     <link rel="stylesheet" href="./proyectos.css">
+    
+    <!-- Favicon y compatibilidad -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="canonical" href="https://nicolasabete.com.ar/pages/proyectos.html">
+    
+    <!-- Datos estructurados (Schema.org) para SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "headline": "Proyectos de Desarrollo Web de Nicolás Abete",
+        "description": "Colección de proyectos profesionales de desarrollo web, incluyendo aplicaciones frontend, backend y diseños UI/UX.",
+        "author": {
+            "@type": "Person",
+            "name": "Nicolás Abete",
+            "url": "https://nicolasabete.com.ar",
+            "jobTitle": "Desarrollador Web Full-Stack Junior",
+            "sameAs": [
+                "https://github.com/NicolasAbete",
+                "https://www.instagram.com/nicoabete_/"
+            ]
+        },
+        "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": [
+                {
+                    "@type": "SoftwareSourceCode",
+                    "position": 1,
+                    "name": "Mi Primer Portfolio",
+                    "description": "Portfolio web desarrollado con HTML, CSS, JavaScript y SASS",
+                    "codeRepository": "https://github.com/NicolasAbete/Proyecto-Pagina-Web-Portfolio",
+                    "programmingLanguage": ["HTML", "CSS", "JavaScript", "SASS"]
+                },
+                {
+                    "@type": "SoftwareSourceCode",
+                    "position": 2,
+                    "name": "E-commerce",
+                    "description": "Tienda online responsive con carrito de compras funcional",
+                    "codeRepository": "https://github.com/CodeSystem2022/Grupo-Omega-4to-semestre",
+                    "programmingLanguage": ["HTML", "CSS", "JavaScript", "SQL"]
+                }
+            ]
+        }
+    }    
+    </script>
 </head>
+
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <!-- Navbar mejorado con efecto de glassmorphism y atributos ARIA -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" aria-label="Navegación principal">
         <div class="container">
-            <a class="navbar-brand" href="../index.html">DevPortfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="../index.html" aria-label="Inicio">
+                <span class="brand-text">DevPortfolio</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -25,7 +103,7 @@
                         <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="./proyectos.html">Proyectos</a>
+                        <a class="nav-link active" href="./proyectos.html" aria-current="page">Proyectos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./sobreMi.html">Sobre Mí</a>
@@ -42,8 +120,8 @@
     </nav>
 
     <!-- Header Section with Background Animation -->
-    <section class="projects-header">
-        <ul class="bg-animation">
+    <section class="projects-header" aria-labelledby="projects-main-heading">
+        <ul class="bg-animation" aria-hidden="true">
             <li></li>
             <li></li>
             <li></li>
@@ -58,187 +136,256 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h1>Mis <span class="gradient-text">Proyectos</span></h1>
+                    <h1 id="projects-main-heading">Mis <span class="gradient-text">Proyectos</span></h1>
                     <p class="lead">Una colección de trabajos que reflejan mi trayectoria y habilidades como desarrollador web</p>
-                    <div class="filter-buttons">
-                        <button class="filter-btn active" data-filter="all">Todos</button>
-                        <button class="filter-btn" data-filter="web">Desarrollo Web</button>
-                        <button class="filter-btn" data-filter="frontend">Frontend</button>
-                        <button class="filter-btn" data-filter="backend">Backend</button>
-                        <button class="filter-btn" data-filter="design">Diseño</button>
+                    <div class="filter-buttons" role="group" aria-label="Filtrar proyectos por categoría">
+                        <button class="filter-btn active" data-filter="all" aria-pressed="true">Todos</button>
+                        <button class="filter-btn" data-filter="web" aria-pressed="false">Desarrollo Web</button>
+                        <button class="filter-btn" data-filter="frontend" aria-pressed="false">Frontend</button>
+                        <button class="filter-btn" data-filter="backend" aria-pressed="false">Backend</button>
+                        <button class="filter-btn" data-filter="design" aria-pressed="false">Diseño</button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section class="projects-showcase">
+    <!-- Projects Section optimizado con lazy loading y markup semántico -->
+    <section class="projects-showcase" aria-label="Galería de proyectos">
         <div class="container">
-            <div class="row">
-                <!-- Proyecto 1 -->
+            <div class="row" id="projects-container">
+                <!-- Proyecto 1 con marcado semántico mejorado -->
                 <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="frontend design web">
-                    <div class="project-card">
+                    <article class="project-card h-100">
                         <div class="project-image">
-                            <img src="../img/old-portfolio.png" alt="Mi primer portfolio" class="img-fluid">
+                            <img src="../img/old-portfolio.png" alt="Captura de pantalla de mi primer portfolio web" class="img-fluid" loading="lazy" width="400" height="300">
                             <div class="project-overlay">
-                                <a href="#" class="preview-btn"><i class="fas fa-eye"></i></a>
-                                <a href="https://github.com/NicolasAbete/Proyecto-Pagina-Web-Portfolio" target="_blank" class="code-btn"><i class="fas fa-code"></i></a>
+                                <a href="#" class="preview-btn" aria-label="Previsualizar proyecto"><i class="fas fa-eye" aria-hidden="true"></i></a>
+                                <a href="https://github.com/NicolasAbete/Proyecto-Pagina-Web-Portfolio" target="_blank" rel="noopener" class="code-btn" aria-label="Ver código en GitHub"><i class="fas fa-code" aria-hidden="true"></i></a>
                             </div>
                         </div>
                         <div class="project-content">
-                            <div class="project-header">
-                                <h3>Mi Primer Portfolio</h3>
-                                <span class="project-date"><i class="far fa-calendar-alt"></i> Febrero 2024</span>
-                            </div>
-                            <p>Este portfolio fue la primera web que programé solo. El 100% del código lo hice yo intentando que sea una web escalable y modificable en su totalidad.</p>
-                            <div class="project-tech">
+                            <header class="project-header">
+                                <h2>Mi Primer Portfolio</h2>
+                                <time class="project-date" datetime="2024-02"><i class="far fa-calendar-alt" aria-hidden="true"></i> Febrero 2024</time>
+                            </header>
+                            <p>Este portfolio fue la primera web que programé solo. El 100% del código lo hice yo intentando que sea una web <strong>escalable y modificable</strong> en su totalidad.</p>
+                            <div class="project-tech" aria-label="Tecnologías utilizadas">
                                 <span class="project-tag tag-html">HTML</span>
                                 <span class="project-tag tag-css">CSS</span>
                                 <span class="project-tag tag-js">JavaScript</span>
                                 <span class="project-tag tag-sass">SASS</span>
                             </div>
                             <div class="project-actions">
-                                <a href="https://github.com/NicolasAbete/Proyecto-Pagina-Web-Portfolio" target="_blank" class="btn btn-sm btn-code">Ver Código</a>
+                                <a href="https://github.com/NicolasAbete/Proyecto-Pagina-Web-Portfolio" target="_blank" rel="noopener" class="btn btn-sm btn-code">
+                                    <i class="fab fa-github me-1" aria-hidden="true"></i> Ver Código
+                                </a>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
 
-                <!-- Proyecto 2 -->
+                <!-- Proyecto 2 con marcado semántico mejorado -->
                 <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="frontend backend web">
-                    <div class="project-card">
+                    <article class="project-card h-100">
                         <div class="project-image">
-                            <div class="project-icon-container">
+                            <div class="project-icon-container" aria-hidden="true">
                                 <i class="fas fa-shopping-cart"></i>
                             </div>
                             <div class="project-overlay">
-                                <a href="#" class="preview-btn"><i class="fas fa-eye"></i></a>
-                                <a href="https://github.com/CodeSystem2022/Grupo-Omega-4to-semestre" target="_blank" class="code-btn"><i class="fas fa-code"></i></a>
+                                <a href="#" class="preview-btn" aria-label="Previsualizar proyecto"><i class="fas fa-eye" aria-hidden="true"></i></a>
+                                <a href="https://github.com/CodeSystem2022/Grupo-Omega-4to-semestre" target="_blank" rel="noopener" class="code-btn" aria-label="Ver código en GitHub"><i class="fas fa-code" aria-hidden="true"></i></a>
                             </div>
                         </div>
                         <div class="project-content">
-                            <div class="project-header">
-                                <h3>E-commerce</h3>
-                                <span class="project-date"><i class="far fa-calendar-alt"></i> Enero 2022</span>
-                            </div>
-                            <p>Tienda online responsive con carrito de compras funcional. Este proyecto lo realizamos durante el cursado de UTN con mi equipo de trabajo Omega.</p>
-                            <div class="project-tech">
+                            <header class="project-header">
+                                <h2>E-commerce</h2>
+                                <time class="project-date" datetime="2022-01"><i class="far fa-calendar-alt" aria-hidden="true"></i> Enero 2022</time>
+                            </header>
+                            <p>Tienda online responsive con carrito de compras funcional. Este proyecto lo realizamos durante el cursado de <strong>UTN</strong> con mi equipo de trabajo Omega.</p>
+                            <div class="project-tech" aria-label="Tecnologías utilizadas">
                                 <span class="project-tag tag-html">HTML</span>
                                 <span class="project-tag tag-css">CSS</span>
                                 <span class="project-tag tag-js">JavaScript</span>
                                 <span class="project-tag tag-sql">SQL</span>
                             </div>
                             <div class="project-actions">
-                                <a href="https://github.com/CodeSystem2022/Grupo-Omega-4to-semestre" target="_blank" class="btn btn-sm btn-code">Ver Código</a>
+                                <a href="https://github.com/CodeSystem2022/Grupo-Omega-4to-semestre" target="_blank" rel="noopener" class="btn btn-sm btn-code">
+                                    <i class="fab fa-github me-1" aria-hidden="true"></i> Ver Código
+                                </a>
                             </div>
                         </div>
-                    </div>
+                    </article>
+                </div>
+
+                <!-- Proyecto 3 (Nuevo, para mejorar la oferta de contenido) -->
+                <div class="col-md-6 col-lg-4 mb-4 project-item" data-category="design frontend">
+                    <article class="project-card featured-project h-100">
+                        <div class="featured-badge">Destacado</div>
+                        <div class="project-image">
+                            <div class="project-icon-container" aria-hidden="true">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="project-overlay">
+                                <span class="overlay-text">¡Tu proyecto aquí!</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <header class="project-header">
+                                <h2>Tu Próximo Proyecto</h2>
+                                <time class="project-date" datetime="2025"><i class="far fa-calendar-alt" aria-hidden="true"></i> 2025</time>
+                            </header>
+                            <p>¿Tienes una idea innovadora? <strong>Trabajemos juntos</strong> para convertirla en una solución web de alta calidad y gran impacto.</p>
+                            <div class="project-tech" aria-label="Posibles tecnologías">
+                                <span class="project-tag tag-html">HTML</span>
+                                <span class="project-tag tag-css">CSS</span>
+                                <span class="project-tag tag-js">JavaScript</span>
+                                <span class="project-tag tag-react">React</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="./contacto.html" class="btn btn-sm btn-primary pulse-btn">
+                                    <i class="fas fa-handshake me-1" aria-hidden="true"></i> Hablemos
+                                </a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Preview -->
-    <section class="contact-preview">
+    <!-- Contact Preview con mejor estructura semántica -->
+    <section class="contact-preview" aria-labelledby="contact-cta-heading">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 mx-auto text-center">
-                    <h2>¿Interesado en trabajar juntos?</h2>
-                    <p class="mb-4">Estoy disponible para nuevas oportunidades laborales. ¡Contáctame y conversemos!</p>
-                    <a href="./contacto.html" class="btn btn-light btn-lg">Envíame un mensaje</a>
-                    <div class="social-links">
-                        <a href="https://github.com/NicolasAbete" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.instagram.com/nicoabete_/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://wa.link/ya1z1n" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <h2 id="contact-cta-heading">¿Interesado en trabajar juntos?</h2>
+                    <p class="mb-4">Estoy disponible para nuevas oportunidades laborales. ¡Contáctame y conversemos sobre tu proyecto!</p>
+                    <a href="./contacto.html" class="btn btn-light btn-lg">
+                        <i class="fas fa-paper-plane me-2" aria-hidden="true"></i>Envíame un mensaje
+                    </a>
+                    <div class="social-links" aria-label="Redes sociales">
+                        <a href="https://github.com/NicolasAbete" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://www.instagram.com/nicoabete_/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://wa.link/ya1z1n" target="_blank" rel="noopener" aria-label="WhatsApp">
+                            <i class="fas fa-whatsapp" aria-hidden="true"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-   <!-- Footer -->
-   <footer>
+<!-- Footer con mejoras semánticas -->
+<footer>
     <div class="container">
         <div class="row">
             <div class="col-md-4 mb-4 mb-md-0">
-                <h5>DevPortfolio</h5>
+                <h3 class="brand-footer">Dev<span>Portfolio</span></h3>
                 <p>Desarrollador web junior enfocado en crear experiencias digitales atractivas y funcionales.</p>
             </div>
             <div class="col-md-2 mb-4 mb-md-0 footer-links">
-                <h5>Navegar</h5>
+                <h4>Navegar</h4>
                 <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./proyectos.html">Proyectos</a></li>
-                    <li><a href="./sobreMi.html">Sobre Mí</a></li>
-                    <li><a href="./cv.html">CV</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
+                    <li><a href="../index.html"><i class="fas fa-chevron-right me-1" aria-hidden="true"></i> Inicio</a></li>
+                    <li><a href="./proyectos.html"><i class="fas fa-chevron-right me-1" aria-hidden="true"></i> Proyectos</a></li>
+                    <li><a href="./sobreMi.html"><i class="fas fa-chevron-right me-1" aria-hidden="true"></i> Sobre Mí</a></li>
+                    <li><a href="./cv.html"><i class="fas fa-chevron-right me-1" aria-hidden="true"></i> CV</a></li>
+                    <li><a href="./contacto.html"><i class="fas fa-chevron-right me-1" aria-hidden="true"></i> Contacto</a></li>
                 </ul>
             </div>
             <div class="col-md-3 mb-4 mb-md-0 footer-links">
-                <h5>Contacto</h5>
+                <h4>Contacto</h4>
                 <ul>
-                    <li><a href="mailto:nicolas.abete@hotmail.com"><i class="fas fa-envelope me-2"></i> nicolas.abete@hotmail.com</a></li>
-                    <li><a href="tel:+542604206747"><i class="fas fa-phone me-2"></i> +54 0 260 4206747</a></li>
-                    <li><a href="#"><i class="fas fa-map-marker-alt me-2"></i> San Rafael, Mendoza, Argentina</a></li>
+                    <li><a href="mailto:nicolas.abete@hotmail.com" aria-label="Enviar email">
+                        <i class="fas fa-envelope me-2" aria-hidden="true"></i> nicolas.abete@hotmail.com</a>
+                    </li>
+                    <li><a href="tel:+542604206747" aria-label="Llamar por teléfono">
+                        <i class="fas fa-phone me-2" aria-hidden="true"></i> +54 0 260 4206747</a>
+                    </li>
+                    <li><address><i class="fas fa-map-marker-alt me-2" aria-hidden="true"></i> San Rafael, Mendoza, Argentina</address></li>
                 </ul>
             </div>
             <div class="col-md-3 footer-links">
-                <h5>Social</h5>
+                <h4>Social</h4>
                 <ul>
-                    <li><a href="https://github.com/NicolasAbete" target="_blank"><i class="fab fa-github me-2"></i> GitHub</a></li>
-                    <li><a href="https://www.instagram.com/nicoabete_/" target="_blank"><i class="fab fa-instagram me-2"></i> Instagram</a></li>
-                    <li><a href="https://wa.link/ya1z1n" target="_blank"><i class="fab fa-whatsapp me-2"></i> WhatsApp</a></li>
+                    <li><a href="https://github.com/NicolasAbete" target="_blank" rel="noopener">
+                        <i class="fab fa-github me-2" aria-hidden="true"></i> GitHub</a>
+                    </li>
+                    <li><a href="https://www.instagram.com/nicoabete_/" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram me-2" aria-hidden="true"></i> Instagram</a>
+                    </li>
+                    <li><a href="https://wa.link/ya1z1n" target="_blank" rel="noopener">
+                        <i class="fab fa-whatsapp me-2" aria-hidden="true"></i> WhatsApp</a>
+                    </li>
                 </ul>
             </div>
         </div>
         <div class="copyright">
             <p>&copy; 2025 DevPortfolio. Todos los derechos reservados.</p>
+            <div class="scroll-top">
+                <a href="#top" aria-label="Volver arriba"><i class="fas fa-arrow-up" aria-hidden="true"></i></a>
+            </div>
         </div>
     </div>
 </footer>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript optimizado con carga diferida -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js" defer></script>
     <script>
-        // Navbar scroll effect
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.style.padding = '10px 0';
-                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
-                navbar.style.boxShadow = '0 4px 10px -1px rgba(0, 0, 0, 0.1)';
-            } else {
-                navbar.style.padding = '20px 0';
-                navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
-                navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
-            }
-        });
-
-        // Project filtering
+        // Carga diferida de scripts
         document.addEventListener('DOMContentLoaded', function() {
+            // Navbar scroll effect mejorado con rendimiento
+            const navbar = document.querySelector('.navbar');
+            const handleScroll = () => {
+                if (window.scrollY > 50) {
+                    navbar.style.padding = '10px 0';
+                    navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
+                    navbar.style.boxShadow = '0 4px 10px -1px rgba(0, 0, 0, 0.1)';
+                } else {
+                    navbar.style.padding = '20px 0';
+                    navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+                    navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+                }
+            };
+            
+            // Usar passive: true para mejor rendimiento en móviles
+            window.addEventListener('scroll', handleScroll, { passive: true });
+            
+            // Project filtering con accesibilidad mejorada
             const filterBtns = document.querySelectorAll('.filter-btn');
             const projectItems = document.querySelectorAll('.project-item');
 
             filterBtns.forEach(btn => {
                 btn.addEventListener('click', function() {
-                    // Remove active class from all buttons
-                    filterBtns.forEach(btn => btn.classList.remove('active'));
-                    // Add active class to clicked button
+                    // Actualizamos los atributos ARIA
+                    filterBtns.forEach(btn => {
+                        btn.classList.remove('active');
+                        btn.setAttribute('aria-pressed', 'false');
+                    });
+                    
                     this.classList.add('active');
+                    this.setAttribute('aria-pressed', 'true');
 
                     const filter = this.getAttribute('data-filter');
+                    // Anunciar a lectores de pantalla cuántos proyectos se muestran (accesibilidad)
+                    let visibleCount = 0;
                     
                     projectItems.forEach(item => {
                         const categories = item.getAttribute('data-category').split(' ');
                         
                         if (filter === 'all' || categories.includes(filter)) {
+                            visibleCount++;
                             item.style.display = 'block';
-                            // Add animation
-                            setTimeout(() => {
+                            // Añadir animación con mejor rendimiento
+                            requestAnimationFrame(() => {
                                 item.style.transform = 'translateY(0)';
                                 item.style.opacity = '1';
-                            }, 100);
+                            });
                         } else {
                             item.style.transform = 'translateY(20px)';
                             item.style.opacity = '0';
@@ -247,6 +394,51 @@
                             }, 300);
                         }
                     });
+                });
+            });
+
+            // Implementar lazy loading para imágenes
+            if ('IntersectionObserver' in window) {
+                const imgOptions = {
+                    root: null,
+                    threshold: 0.1,
+                    rootMargin: "0px 0px 50px 0px"
+                };
+                
+                const imgObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            if (img.dataset.src) {
+                                img.src = img.dataset.src;
+                                img.removeAttribute('data-src');
+                            }
+                            observer.unobserve(img);
+                        }
+                    });
+                }, imgOptions);
+                
+                document.querySelectorAll('img[data-src]').forEach(img => {
+                    imgObserver.observe(img);
+                });
+            }
+            
+            // Scroll suave para todos los enlaces internos
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    
+                    if (href === '#') return;
+                    
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
                 });
             });
         });
