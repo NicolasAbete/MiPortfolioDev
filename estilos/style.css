@@ -1417,6 +1417,285 @@ textarea.contacto-form-control {
     width: 100%;
   }
 }
+/* Sección de Certificados - Agregar al final de tu archivo CSS */
+
+.certificates {
+  padding: var(--space-6) 0;
+  background: linear-gradient(135deg, #f8f9ff 0%, #e8f2ff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.certificates::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23007bff" opacity="0.03"/><circle cx="75" cy="75" r="1" fill="%2317a2b8" opacity="0.03"/><circle cx="25" cy="75" r="1" fill="%2328a745" opacity="0.03"/><circle cx="75" cy="25" r="1" fill="%23ffc107" opacity="0.03"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  pointer-events: none;
+}
+
+.certificate-card {
+  background: var(--bg-white);
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.certificate-card:hover {
+  transform: translateY(-15px) scale(1.02);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+  border-color: var(--primary-color);
+}
+
+.certificate-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: left 0.6s ease;
+  z-index: 2;
+}
+
+.certificate-card:hover::before {
+  left: 100%;
+}
+
+.certificate-image {
+  position: relative;
+  overflow: hidden;
+  height: 240px;
+  background: linear-gradient(135deg, #f0f0f0, #e0e0e0);
+}
+
+.certificate-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.6s ease;
+}
+
+.certificate-card:hover .certificate-img {
+  transform: scale(1.1);
+}
+
+.certificate-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 123, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.certificate-card:hover .certificate-overlay {
+  opacity: 1;
+}
+
+.certificate-zoom {
+  font-size: 2rem;
+  color: white;
+  transform: scale(0.5);
+  transition: transform 0.3s ease;
+}
+
+.certificate-overlay:hover .certificate-zoom {
+  transform: scale(1);
+}
+
+.certificate-content {
+  padding: var(--space-4);
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.certificate-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--dark-color);
+  line-height: 1.3;
+}
+
+.certificate-institution {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.certificate-date {
+  display: inline-block;
+  padding: 6px 16px;
+  background: linear-gradient(135deg, var(--primary-color), var(--highlight-color));
+  color: white;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Efecto de badge superior */
+.certificate-card::after {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, var(--secondary-color), var(--highlight-color));
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(0);
+  transition: all 0.3s ease;
+  z-index: 3;
+}
+
+.certificate-card:hover::after {
+  opacity: 0.1;
+  transform: scale(1);
+}
+
+/* Modal personalizado */
+.modal-content {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.modal-header {
+  padding: 1.5rem 2rem 1rem;
+}
+
+.modal-title {
+  font-weight: 700;
+  color: var(--dark-color);
+}
+
+.btn-close {
+  border-radius: 50%;
+  padding: 0.5rem;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.btn-close:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+#modalCertificateImage {
+  border-radius: 0 0 20px 20px;
+  max-height: 80vh;
+  width: auto;
+}
+
+/* Animaciones adicionales */
+@keyframes certificateFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.certificate-card:nth-child(1) {
+  animation: certificateFloat 6s ease-in-out infinite;
+}
+
+.certificate-card:nth-child(2) {
+  animation: certificateFloat 6s ease-in-out infinite 2s;
+}
+
+.certificate-card:nth-child(3) {
+  animation: certificateFloat 6s ease-in-out infinite 4s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .certificates {
+    padding: var(--space-4) 0;
+  }
+  
+  .certificate-image {
+    height: 200px;
+  }
+  
+  .certificate-content {
+    padding: var(--space-3);
+  }
+  
+  .certificate-title {
+    font-size: 1.1rem;
+  }
+  
+  .certificate-card:hover {
+    transform: translateY(-8px) scale(1.01);
+  }
+  
+  .modal-dialog {
+    margin: 1rem;
+  }
+  
+  #modalCertificateImage {
+    max-height: 60vh;
+  }
+}
+
+@media (max-width: 576px) {
+  .certificate-card {
+    margin-bottom: var(--space-3);
+  }
+  
+  .certificate-image {
+    height: 180px;
+  }
+  
+  .certificate-content {
+    padding: var(--space-2);
+  }
+  
+  .certificate-title {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  
+  .certificate-institution {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+  }
+  
+  .certificate-date {
+    padding: 5px 12px;
+    font-size: 0.8rem;
+  }
+}
+
+
 .projects-showcase {
   padding: 50px 0 100px;
   background-color: #ffffff;

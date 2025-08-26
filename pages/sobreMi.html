@@ -241,6 +241,103 @@
             </div>
         </div>
     </section>
+    <!-- Certificates Section - Agregar antes del footer -->
+    <section class="certificates" aria-labelledby="certificates-heading">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <span class="section-badge">CERTIFICACIONES</span>
+                    <h2 class="section-title" id="certificates-heading">Mis <span class="highlight-text">Títulos</span></h2>
+                    <p class="section-subtitle">Formación académica y certificaciones profesionales que respaldan mi experiencia</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="certificate-card" data-aos="fade-up">
+                        <div class="certificate-image">
+                            <img src="../img/desarrolladorWeb.png" alt="Título en Desarrollo Web Full-Stack" 
+                                    class="img-fluid certificate-img" loading="lazy"
+                                    onerror="this.src='/api/placeholder/400/300'; this.alt='Certificado de programación'">
+                            <div class="certificate-overlay">
+                                <i class="fas fa-search-plus certificate-zoom" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="certificate-content">
+                            <h3 class="certificate-title">Desarrollo Web Full-Stack</h3>
+                            <p class="certificate-institution">Coder House</p>
+                            <span class="certificate-date">2025</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="certificate-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="certificate-image">
+                            <img src="../img/reactJs.png" alt="Certificación en ReactJS" 
+                                class="img-fluid certificate-img" loading="lazy"
+                                onerror="this.src='/api/placeholder/400/300'; this.alt='Certificado de programación'">
+                            <div class="certificate-overlay">
+                                <i class="fas fa-search-plus certificate-zoom" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="certificate-content">
+                            <h3 class="certificate-title">Desarrollador ReactJs</h3>
+                            <p class="certificate-institution">Coder House</p>
+                            <span class="certificate-date">2025</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="certificate-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="certificate-image">
+                            <img src="../img/javaScript.png" alt="Certificación en JavaScript " 
+                                class="img-fluid certificate-img" loading="lazy"
+                                onerror="this.src='/api/placeholder/400/300'; this.alt='Certificado de programación'">
+                            <div class="certificate-overlay">
+                                <i class="fas fa-search-plus certificate-zoom" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="certificate-content">
+                            <h3 class="certificate-title">JavaScript Avanzado</h3>
+                            <p class="certificate-institution">Coder House</p>
+                            <span class="certificate-date">2025</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="certificate-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="certificate-image">
+                            <img src="../img/utn.png" alt="Tecnico Superior en Programacion" 
+                                class="img-fluid certificate-img" loading="lazy"
+                                onerror="this.src='/api/placeholder/400/300'; this.alt='Certificado de programación'">
+                            <div class="certificate-overlay">
+                                <i class="fas fa-search-plus certificate-zoom" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="certificate-content">
+                            <h3 class="certificate-title">Tecnico Superior en Programacion</h3>
+                            <p class="certificate-institution">Universidad Tecnologica Nacional, UTN</p>
+                            <span class="certificate-date">2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para ver certificados en grande -->
+    <div class="modal fade" id="certificateModal" tabindex="-1" aria-labelledby="certificateModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="certificateModalLabel">Certificado</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center p-0">
+                    <img src="" alt="Certificado ampliado" class="img-fluid" id="modalCertificateImage">
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer aria-label="Información de contacto y navegación">
@@ -365,6 +462,110 @@
                 });
             }
         });
+        // Agregar este código JavaScript al final de tu script existente, dentro del DOMContentLoaded
+
+// Funcionalidad para los certificados
+document.addEventListener('DOMContentLoaded', function() {
+    // ... tu código existente ...
+    
+    // Funcionalidad de certificados
+    const certificateOverlays = document.querySelectorAll('.certificate-overlay');
+    const certificateModal = document.getElementById('certificateModal');
+    const modalImage = document.getElementById('modalCertificateImage');
+    const modalTitle = document.getElementById('certificateModalLabel');
+    
+    if (certificateOverlays.length > 0 && certificateModal && modalImage) {
+        certificateOverlays.forEach((overlay, index) => {
+            overlay.addEventListener('click', function() {
+                const certificateCard = this.closest('.certificate-card');
+                const img = certificateCard.querySelector('.certificate-img');
+                const title = certificateCard.querySelector('.certificate-title');
+                
+                if (img && title) {
+                    // Actualizar la imagen del modal
+                    modalImage.src = img.src;
+                    modalImage.alt = img.alt;
+                    modalTitle.textContent = title.textContent;
+                    
+                    // Mostrar el modal
+                    const modal = new bootstrap.Modal(certificateModal);
+                    modal.show();
+                }
+            });
+        });
+    }
+    
+    // Efecto parallax suave para los certificados
+    let certificateSection = document.querySelector('.certificates');
+    if (certificateSection && 'IntersectionObserver' in window) {
+        const certificateObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const cards = entry.target.querySelectorAll('.certificate-card');
+                    cards.forEach((card, index) => {
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, index * 200);
+                    });
+                    certificateObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '50px'
+        });
+        
+        // Inicializar las tarjetas como invisibles
+        const certificateCards = certificateSection.querySelectorAll('.certificate-card');
+        certificateCards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'all 0.6s ease';
+        });
+        
+        certificateObserver.observe(certificateSection);
+    }
+    
+    // Efecto de hover mejorado para los certificados
+    const certificateCards = document.querySelectorAll('.certificate-card');
+    certificateCards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            // Elevar ligeramente las otras tarjetas
+            certificateCards.forEach(otherCard => {
+                if (otherCard !== this) {
+                    otherCard.style.transform = 'translateY(-5px) scale(0.98)';
+                    otherCard.style.opacity = '0.7';
+                }
+            });
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            // Restaurar el estado normal de todas las tarjetas
+            certificateCards.forEach(otherCard => {
+                otherCard.style.transform = '';
+                otherCard.style.opacity = '';
+            });
+        });
+    });
+    
+        // Optimización de rendimiento para animaciones
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            // Deshabilitar animaciones para usuarios que prefieren movimiento reducido
+            const style = document.createElement('style');
+            style.textContent = `
+                .certificate-card {
+                    animation: none !important;
+                    transition: none !important;
+                }
+                .certificate-card::before,
+                .certificate-card::after {
+                    transition: none !important;
+                }
+            `;
+            document.head.appendChild(style);
+        } 
+    });
     </script>
 </body>
 </html>
