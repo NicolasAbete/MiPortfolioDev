@@ -1694,7 +1694,66 @@ textarea.contacto-form-control {
     font-size: 0.8rem;
   }
 }
+/* Solución específica para la imagen del certificado de la UTN */
+/* Agrega este CSS al final de tu archivo de estilos */
 
+.certificate-card .certificate-img[src*="utn.png"] {
+  object-fit: contain !important;
+  object-position: center !important;
+  background: #ffffff;
+  padding: 10px;
+}
+
+/* Alternativa más específica si la anterior no funciona */
+.certificate-card:last-child .certificate-img {
+  object-fit: contain !important;
+  object-position: center !important;
+  background: #ffffff;
+  padding: 10px;
+}
+
+/* O puedes usar una clase específica en el HTML */
+.certificate-img.utn-certificate {
+  object-fit: contain !important;
+  object-position: center !important;
+  background: #ffffff;
+  padding: 10px;
+}
+
+/* Solución específica para la imagen del certificado de la UTN */
+/* Agrega este CSS al final de tu archivo de estilos */
+
+.certificate-card .certificate-img[src*="utn.png"] {
+  object-fit: contain !important;
+  object-position: center !important;
+  background: #ffffff;
+  padding: 10px;
+}
+
+/* Alternativa más específica si la anterior no funciona */
+.certificate-card:last-child .certificate-img {
+  object-fit: contain !important;
+  object-position: center !important;
+  background: #ffffff;
+  padding: 10px;
+}
+
+/* O puedes usar una clase específica en el HTML */
+.certificate-img.utn-certificate {
+  object-fit: contain !important;
+  object-position: center !important;
+  background: #ffffff;
+  padding: 10px;
+}
+
+/* Animación de zoom más suave y menos invasiva */
+.certificate-img {
+  transition: transform 1.2s ease-out !important; /* Cambiado de 0.6s a 1.2s */
+}
+
+.certificate-card:hover .certificate-img {
+  transform: scale(1.05) !important; /* Cambiado de 1.1 a 1.05 para menos zoom */
+}
 
 .projects-showcase {
   padding: 50px 0 100px;
