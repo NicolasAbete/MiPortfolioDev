@@ -1943,7 +1943,7 @@ textarea.contacto-form-control {
 }
 
 .cv-img {
-  max-width: 100%;
+  max-width: 40%;
   height: auto;
   border: 2px solid #00fff7;
   border-radius: 10px;
